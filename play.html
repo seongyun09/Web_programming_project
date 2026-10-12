@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최애찾기 | 명조 팬페이지 / 아카이브</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo"><a href="index.html">명조 팬페이지 / 아카이브</a></h1>
+    <nav class="gnb">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">세계관 / 스토리</a></li>
+        <li><a href="char.html">공명자</a></li>
+        <li><a href="guide.html">가이드</a></li>
+        <li><a href="community.html">커뮤니티</a></li>
+        <li><a href="play.html" class="active">최애찾기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <h2>최애찾기</h2>
+      <p>이상형 월드컵으로 나의 최애 공명자를 찾아보세요.</p>
+      <nav class="sub-nav">
+        <a href="#worldcup">이상형 월드컵</a>
+        <a href="#media">미디어</a>
+      </nav>
+    </div>
+
+    <section id="worldcup">
+      <h2 class="section-title">이상형 월드컵</h2>
+
+      <div class="wc-setup" id="wc-setup">
+        <label for="wc-size">토너먼트</label>
+        <select id="wc-size">
+          <option value="8">8강</option>
+          <option value="16" selected>16강</option>
+        </select>
+        <button type="button" class="btn" id="wc-start">시작하기</button>
+      </div>
+
+      <div id="wc-game" hidden>
+        <div class="wc-status">
+          <span id="wc-round">16강</span>
+          <span id="wc-count">1 / 8</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" id="wc-progress"></div>
+        </div>
+        <div class="wc-arena">
+          <button type="button" class="wc-pick" id="wc-left">
+            <span class="wc-img"></span>
+            <span class="wc-name"></span>
+          </button>
+          <span class="wc-vs">VS</span>
+          <button type="button" class="wc-pick" id="wc-right">
+            <span class="wc-img"></span>
+            <span class="wc-name"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="wc-result" id="wc-result" hidden>
+        <h3>나의 최애 공명자는</h3>
+        <p class="winner" id="wc-winner"></p>
+        <button type="button" class="btn" id="wc-restart">다시 하기</button>
+      </div>
+    </section>
+
+    <section id="media">
+      <h2 class="section-title">공식 PV</h2>
+      <div class="media-grid">
+        <article class="media-card">
+          <div class="video-frame"><span class="video-placeholder">PV</span></div>
+          <p>PV 제목</p>
+        </article>
+        <article class="media-card">
+          <div class="video-frame"><span class="video-placeholder">PV</span></div>
+          <p>PV 제목</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">OST</h2>
+      <div class="ost-list">
+        <div class="ost-item">
+          <span class="ost-title">OST 제목 1</span>
+          <span class="muted">음원 준비 중</span>
+        </div>
+        <div class="ost-item">
+          <span class="ost-title">OST 제목 2</span>
+          <span class="muted">음원 준비 중</span>
+        </div>
+        <div class="ost-item">
+          <span class="ost-title">OST 제목 3</span>
+          <span class="muted">음원 준비 중</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links">
+      <a href="#">GitHub</a>
+      <a href="mailto:example@example.com">이메일</a>
+      <a href="#">명조 공식 사이트</a>
+    </nav>
+    <p class="copyright">
+      &copy; 2026 팬메이드 페이지. 명조: 워더링 웨이브의 저작권은 쿠로게임즈에 있습니다.
+    </p>
+  </footer>
+
+  <script src="play.js"></script>
+</body>
+</html>
