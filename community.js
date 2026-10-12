@@ -59,6 +59,7 @@ function render() {
 
     const tag = document.createElement("span");
     tag.className = "tag";
+    tag.dataset.cat = post.category;
     tag.textContent = post.category;
 
     const info = document.createElement("span");

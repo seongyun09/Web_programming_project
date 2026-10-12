@@ -9,7 +9,26 @@
   --gold: #f2c14e;
   --radius: 12px;
   --gutter: 16px;
+
+  /* 게임 속 6가지 속성 색 */
+  --spectro: #f5d34a; /* 회절 */
+  --fusion: #ff6a3d;  /* 용융 */
+  --glacio: #4fc3ff;  /* 응결 */
+  --aero: #3ee6a8;    /* 기류 */
+  --electro: #a77bff; /* 전도 */
+  --havoc: #ff4f9a;   /* 인멸 */
+
+  --accent: var(--neon-blue);
+  --rainbow: linear-gradient(90deg, var(--spectro), var(--fusion), var(--havoc), var(--electro), var(--glacio), var(--aero));
 }
+
+/* 페이지마다 대표 속성 색을 하나씩 */
+.theme-home { --accent: var(--spectro); }
+.theme-info { --accent: var(--havoc); }
+.theme-char { --accent: var(--fusion); }
+.theme-guide { --accent: var(--aero); }
+.theme-community { --accent: var(--electro); }
+.theme-play { --accent: var(--glacio); }
 
 /* ===== 기본 ===== */
 * {
@@ -19,7 +38,14 @@
 }
 
 body {
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse at 10% 0%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 45%),
+    radial-gradient(ellipse at 95% 30%, rgba(167, 123, 255, 0.12), transparent 45%),
+    radial-gradient(ellipse at 20% 90%, rgba(62, 230, 168, 0.08), transparent 45%),
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px) 0 0 / 40px 40px,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px) 0 0 / 40px 40px,
+    var(--bg);
+  background-attachment: fixed;
   color: var(--text);
   font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
   line-height: 1.6;
@@ -56,11 +82,26 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
+/* 헤더 아래 속성 색 띠 */
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--rainbow);
+  opacity: 0.8;
+}
+
 .logo a {
   font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--gold);
+  font-weight: 800;
   letter-spacing: 0.02em;
+  background: linear-gradient(90deg, var(--spectro), var(--fusion));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .gnb ul {
@@ -77,10 +118,19 @@ img {
   transition: color 0.2s, border-color 0.2s;
 }
 
+/* 메뉴마다 해당 페이지의 속성 색 */
+.gnb li:nth-child(1) a { --c: var(--spectro); }
+.gnb li:nth-child(2) a { --c: var(--havoc); }
+.gnb li:nth-child(3) a { --c: var(--fusion); }
+.gnb li:nth-child(4) a { --c: var(--aero); }
+.gnb li:nth-child(5) a { --c: var(--electro); }
+.gnb li:nth-child(6) a { --c: var(--glacio); }
+
 .gnb a:hover,
 .gnb a.active {
-  color: var(--neon-blue);
-  border-bottom-color: var(--neon-blue);
+  color: var(--c);
+  border-bottom-color: var(--c);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--c) 50%, transparent);
 }
 
 /* ===== 공통 ===== */
@@ -98,8 +148,8 @@ section + section {
   font-size: 1.4rem;
   margin-bottom: 20px;
   padding-left: 12px;
-  border-left: 3px solid var(--neon-blue);
-  text-shadow: 0 0 12px rgba(58, 209, 255, 0.35);
+  border-left: 3px solid var(--accent);
+  text-shadow: 0 0 12px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
 /* ===== 히어로 (트레일러 + 소개) ===== */
@@ -115,10 +165,10 @@ section + section {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background:
-    radial-gradient(circle at 30% 20%, rgba(58, 209, 255, 0.18), transparent 60%),
+    radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 60%),
     radial-gradient(circle at 80% 90%, rgba(242, 193, 78, 0.14), transparent 55%),
     var(--bg-elev);
-  box-shadow: 0 0 30px rgba(58, 209, 255, 0.08);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--accent) 8%, transparent);
   display: grid;
   place-items: center;
 }
@@ -138,18 +188,40 @@ section + section {
 .cta {
   display: inline-block;
   padding: 14px 32px;
-  border: 1px solid var(--gold);
   border-radius: 999px;
-  color: var(--gold);
-  font-weight: 700;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  background: linear-gradient(90deg, var(--spectro), var(--fusion), var(--havoc));
+  background-size: 200% 100%;
+  color: #1a0f05;
+  font-weight: 800;
+  box-shadow: 0 0 18px rgba(255, 106, 61, 0.35);
+  transition: background-position 0.4s, box-shadow 0.2s, transform 0.2s;
 }
 
 .cta:hover {
-  background: var(--gold);
-  color: var(--bg);
-  box-shadow: 0 0 20px rgba(242, 193, 78, 0.45);
+  background-position: 100% 0;
+  box-shadow: 0 0 28px rgba(255, 79, 154, 0.55);
+  transform: translateY(-2px);
 }
+
+/* ===== 반복되는 항목에 속성 색을 차례로 입히기 ===== */
+.feature-grid > *:nth-child(6n+1), .slider > *:nth-child(6n+1), .zigzag-row:nth-child(6n+1),
+.glossary > *:nth-child(6n+1), .char-grid > *:nth-child(6n+1), .steps > *:nth-child(6n+1),
+.media-grid > *:nth-child(6n+1), .ost-list > *:nth-child(6n+1) { --c: var(--fusion); }
+.feature-grid > *:nth-child(6n+2), .slider > *:nth-child(6n+2), .zigzag-row:nth-child(6n+2),
+.glossary > *:nth-child(6n+2), .char-grid > *:nth-child(6n+2), .steps > *:nth-child(6n+2),
+.media-grid > *:nth-child(6n+2), .ost-list > *:nth-child(6n+2) { --c: var(--aero); }
+.feature-grid > *:nth-child(6n+3), .slider > *:nth-child(6n+3), .zigzag-row:nth-child(6n+3),
+.glossary > *:nth-child(6n+3), .char-grid > *:nth-child(6n+3), .steps > *:nth-child(6n+3),
+.media-grid > *:nth-child(6n+3), .ost-list > *:nth-child(6n+3) { --c: var(--electro); }
+.feature-grid > *:nth-child(6n+4), .slider > *:nth-child(6n+4), .zigzag-row:nth-child(6n+4),
+.glossary > *:nth-child(6n+4), .char-grid > *:nth-child(6n+4), .steps > *:nth-child(6n+4),
+.media-grid > *:nth-child(6n+4), .ost-list > *:nth-child(6n+4) { --c: var(--glacio); }
+.feature-grid > *:nth-child(6n+5), .slider > *:nth-child(6n+5), .zigzag-row:nth-child(6n+5),
+.glossary > *:nth-child(6n+5), .char-grid > *:nth-child(6n+5), .steps > *:nth-child(6n+5),
+.media-grid > *:nth-child(6n+5), .ost-list > *:nth-child(6n+5) { --c: var(--havoc); }
+.feature-grid > *:nth-child(6n), .slider > *:nth-child(6n), .zigzag-row:nth-child(6n),
+.glossary > *:nth-child(6n), .char-grid > *:nth-child(6n), .steps > *:nth-child(6n),
+.media-grid > *:nth-child(6n), .ost-list > *:nth-child(6n) { --c: var(--spectro); }
 
 /* ===== 핵심 매력 카드 ===== */
 .feature-grid {
@@ -159,28 +231,37 @@ section + section {
 
 .card {
   padding: 24px;
-  background: var(--bg-elev);
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--c) 14%, transparent), transparent 60%),
+    var(--bg-elev);
   border: 1px solid var(--border);
+  border-top: 3px solid var(--c);
   border-radius: var(--radius);
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
-  border-color: var(--neon-blue);
+  border-color: var(--c);
   transform: translateY(-4px);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--c) 30%, transparent);
 }
 
 .card-icon {
-  display: inline-block;
-  font-size: 1.6rem;
-  color: var(--gold);
-  margin-bottom: 8px;
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  color: var(--c);
+  background: color-mix(in srgb, var(--c) 15%, transparent);
+  border-radius: 50%;
+  margin-bottom: 12px;
 }
 
 .card h3 {
   font-size: 1.15rem;
   margin-bottom: 6px;
-  color: var(--neon-blue);
+  color: var(--c);
 }
 
 .card p {
@@ -203,16 +284,18 @@ section + section {
   scroll-snap-align: start;
   display: grid;
   place-items: center;
-  background: var(--bg-elev);
-  border: 1px dashed var(--border);
+  background:
+    linear-gradient(200deg, color-mix(in srgb, var(--c) 35%, transparent), transparent 70%),
+    var(--bg-elev);
+  border: 1px solid color-mix(in srgb, var(--c) 40%, transparent);
   border-radius: var(--radius);
-  color: var(--text-muted);
+  color: var(--text);
 }
 
 .more-link {
   display: inline-block;
   margin-top: 16px;
-  color: var(--neon-blue);
+  color: var(--accent);
 }
 
 .more-link:hover {
@@ -238,7 +321,7 @@ section + section {
 }
 
 .footer-links a:hover {
-  color: var(--neon-blue);
+  color: var(--accent);
 }
 
 /* ===== 서브 페이지 공통 ===== */
@@ -247,8 +330,12 @@ section + section {
 }
 
 .page-head h2 {
-  font-size: 1.8rem;
-  color: var(--gold);
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--accent), var(--text));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 8px;
 }
 
@@ -272,8 +359,8 @@ section + section {
 }
 
 .sub-nav a:hover {
-  border-color: var(--neon-blue);
-  color: var(--neon-blue);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .muted {
@@ -284,8 +371,10 @@ section + section {
   aspect-ratio: 4 / 3;
   display: grid;
   place-items: center;
-  background: var(--bg-elev);
-  border: 1px dashed var(--border);
+  background:
+    linear-gradient(200deg, color-mix(in srgb, var(--c, var(--accent)) 30%, transparent), transparent 70%),
+    var(--bg-elev);
+  border: 1px solid color-mix(in srgb, var(--c, var(--accent)) 35%, transparent);
   border-radius: var(--radius);
   color: var(--text-muted);
   font-size: 0.9rem;
@@ -304,7 +393,7 @@ section + section {
 }
 
 .zigzag-row h3 {
-  color: var(--neon-blue);
+  color: var(--c);
   margin-bottom: 8px;
 }
 
@@ -338,7 +427,7 @@ section + section {
 
 .accordion summary::after {
   content: "+";
-  color: var(--neon-blue);
+  color: var(--accent);
   font-size: 1.3rem;
 }
 
@@ -373,13 +462,13 @@ section + section {
 .glossary div {
   padding: 16px 20px;
   background: var(--bg-elev);
-  border-left: 3px solid var(--gold);
+  border-left: 3px solid var(--c);
   border-radius: 0 var(--radius) var(--radius) 0;
 }
 
 .glossary dt {
   font-weight: 700;
-  color: var(--gold);
+  color: var(--c);
   margin-bottom: 4px;
 }
 
@@ -397,13 +486,15 @@ section + section {
 .char-card {
   background: var(--bg-elev);
   border: 1px solid var(--border);
+  border-top: 3px solid var(--c);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .char-card:hover {
-  border-color: var(--neon-blue);
+  border-color: var(--c);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--c) 30%, transparent);
   transform: translateY(-4px);
 }
 
@@ -418,7 +509,7 @@ section + section {
 }
 
 .char-body h3 {
-  color: var(--neon-blue);
+  color: var(--c);
   margin-bottom: 8px;
 }
 
@@ -461,6 +552,7 @@ section + section {
   padding: 20px 20px 20px 72px;
   background: var(--bg-elev);
   border: 1px solid var(--border);
+  border-left: 3px solid var(--c);
   border-radius: var(--radius);
 }
 
@@ -472,8 +564,8 @@ section + section {
   top: 18px;
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--neon-blue);
-  text-shadow: 0 0 10px rgba(58, 209, 255, 0.4);
+  color: var(--c);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--c) 40%, transparent);
 }
 
 .step h3 {
@@ -524,7 +616,7 @@ section + section {
 .post-form select:focus,
 .post-form textarea:focus {
   outline: none;
-  border-color: var(--neon-blue);
+  border-color: var(--accent);
 }
 
 .post-form textarea {
@@ -536,9 +628,9 @@ section + section {
   justify-self: start;
   padding: 10px 24px;
   background: transparent;
-  border: 1px solid var(--neon-blue);
+  border: 1px solid var(--accent);
   border-radius: 999px;
-  color: var(--neon-blue);
+  color: var(--accent);
   font: inherit;
   font-weight: 700;
   cursor: pointer;
@@ -546,7 +638,7 @@ section + section {
 }
 
 .btn:hover {
-  background: var(--neon-blue);
+  background: var(--accent);
   color: var(--bg);
 }
 
@@ -596,9 +688,16 @@ section + section {
 }
 
 .post-meta .tag {
-  color: var(--gold);
-  border-color: var(--gold);
+  --c: var(--gold);
+  color: var(--c);
+  border-color: var(--c);
+  background: color-mix(in srgb, var(--c) 12%, transparent);
 }
+
+.post-meta .tag[data-cat="리뷰"] { --c: var(--spectro); }
+.post-meta .tag[data-cat="밈"] { --c: var(--havoc); }
+.post-meta .tag[data-cat="소식"] { --c: var(--glacio); }
+.post-meta .tag[data-cat="질문"] { --c: var(--aero); }
 
 .post h3 {
   font-size: 1.05rem;
@@ -647,7 +746,7 @@ section + section {
 .progress-bar {
   height: 100%;
   width: 0;
-  background: linear-gradient(90deg, var(--neon-blue), var(--gold));
+  background: linear-gradient(90deg, var(--accent), var(--gold));
   transition: width 0.3s;
 }
 
@@ -689,7 +788,7 @@ section + section {
 
 .wc-pick:hover,
 .wc-pick:focus-visible {
-  border-color: var(--neon-blue);
+  border-color: var(--accent);
   outline: none;
 }
 
@@ -709,8 +808,11 @@ section + section {
   font-size: clamp(2rem, 7vw, 3.6rem);
   font-weight: 900;
   font-style: italic;
-  color: var(--gold);
-  text-shadow: 0 0 18px rgba(242, 193, 78, 0.7);
+  background: linear-gradient(180deg, var(--spectro), var(--fusion));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 12px rgba(255, 106, 61, 0.6));
   pointer-events: none;
 }
 
@@ -792,6 +894,7 @@ section + section {
   padding: 12px 16px;
   background: var(--bg-elev);
   border: 1px solid var(--border);
+  border-left: 3px solid var(--c);
   border-radius: var(--radius);
 }
 
