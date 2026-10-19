@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>명조 팬페이지 / 아카이브</title>
+  <title>명조 아카이브</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="theme-home">
   <header class="site-header">
-    <h1 class="logo"><a href="index.html">명조 팬페이지 / 아카이브</a></h1>
+    <h1 class="logo">
+      <a href="index.html">
+        <span class="logo-mark" aria-hidden="true">鳴</span>
+        <span class="logo-text">명조 아카이브<small>WUTHERING WAVES ARCHIVE</small></span>
+      </a>
+    </h1>
     <nav class="gnb">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -16,26 +21,38 @@
         <li><a href="char.html">공명자</a></li>
         <li><a href="guide.html">가이드</a></li>
         <li><a href="community.html">커뮤니티</a></li>
-        <li><a href="play.html">최애찾기</a></li>
+        <li><a href="play.html" class="nav-fav"><span aria-hidden="true">♥</span> 최애찾기</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">WUTHERING WAVES · FAN ARCHIVE</p>
+        <h2 class="hero-title">비명 이후의 세계,<br>기억을 찾아 떠나는 방랑자</h2>
+      </div>
+
+      <!-- ① 트레일러 (16:9) -->
       <div class="trailer">
         <h2 class="section-title">트레일러</h2>
-        <div class="video-frame">
-          <!-- 16:9 영상 자리 -->
-          <span class="video-placeholder">TRAILER</span>
-        </div>
+        <!-- 영상을 직접 넣으려면 아래 a 태그 대신
+             <iframe src="https://www.youtube.com/embed/영상ID" title="명조 트레일러" allowfullscreen></iframe>
+             를 .video-frame 안에 넣으면 된다. -->
+        <a class="video-frame" href="https://www.youtube.com/@WutheringWaves" target="_blank" rel="noopener">
+          <span class="play-btn" aria-hidden="true">▶</span>
+          <span class="video-caption">공식 유튜브에서 트레일러 보기</span>
+        </a>
       </div>
 
       <div class="intro">
-        <p>
-          명조: 워더링 웨이브의 세계관, 공명자, 초보자 가이드와 팬 커뮤니티를 한곳에 모은 팬 아카이브입니다.
+        <!-- ② 웹페이지 설명 -->
+        <p class="intro-line">
+          <strong>명조 아카이브</strong>는 명조: 워더링 웨이브의 세계관, 공명자, 초보자 가이드와 팬 커뮤니티를 한곳에 모은 비공식 팬 아카이브입니다.
         </p>
-        <a class="cta" href="play.html">최애찾기 시작</a>
+        <!-- ③ 최애찾기 링크 -->
+        <a class="cta" href="play.html"><span aria-hidden="true">♥</span> 최애찾기 시작</a>
+        <p class="cta-note">16명의 공명자 중 나의 최애는 누구? 이상형 월드컵으로 찾아보세요.</p>
       </div>
     </section>
 
@@ -45,40 +62,33 @@
         <article class="card">
           <span class="card-icon">⚔</span>
           <h3>전투</h3>
-          <p>공명자의 스킬을 조합해 펼치는 실시간 전투의 재미를 소개합니다.</p>
+          <p>회피와 반격, 공명 스킬과 공명 해방, 캐릭터 교체 연계까지. 빠르고 화려한 액션 전투를 즐겨 보세요.</p>
+          <a class="card-link" href="guide.html#combat">전투 기초 보기 →</a>
         </article>
         <article class="card">
           <span class="card-icon">◈</span>
           <h3>에코</h3>
-          <p>필드를 누비며 수집하는 에코와 그 육성 방법을 정리합니다.</p>
+          <p>쓰러뜨린 잔상을 에코로 흡수해 전투에 소환하고, 세트 효과와 옵션을 맞춰 공명자를 강화합니다.</p>
+          <a class="card-link" href="guide.html#echo">에코 가이드 보기 →</a>
         </article>
         <article class="card">
           <span class="card-icon">✦</span>
           <h3>캐릭터</h3>
-          <p>개성 넘치는 공명자들의 배경과 운용법을 한눈에 살펴볼 수 있습니다.</p>
+          <p>회절, 용융, 응결, 기류, 전도, 인멸. 여섯 속성의 개성 넘치는 공명자들을 만나 보세요.</p>
+          <a class="card-link" href="char.html">공명자 목록 보기 →</a>
         </article>
       </div>
-    </section>
-
-    <section class="preview">
-      <h2 class="section-title">커뮤니티 이모저모</h2>
-      <div class="slider" aria-label="커뮤니티 밈 미리보기">
-        <div class="slide"><span>밈 / 짤방 1</span></div>
-        <div class="slide"><span>밈 / 짤방 2</span></div>
-        <div class="slide"><span>밈 / 짤방 3</span></div>
-      </div>
-      <a class="more-link" href="community.html">커뮤니티 더 보기 →</a>
     </section>
   </main>
 
   <footer class="site-footer">
     <nav class="footer-links">
-      <a href="#">GitHub</a>
+      <a href="https://github.com/seongyun09/Web_programming_project" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:example@example.com">이메일</a>
-      <a href="#">명조 공식 사이트</a>
+      <a href="https://wutheringwaves.kurogames.com/" target="_blank" rel="noopener">명조 공식 사이트</a>
     </nav>
     <p class="copyright">
-      &copy; 2026 팬메이드 페이지. 명조: 워더링 웨이브의 저작권은 쿠로게임즈에 있습니다.
+      &copy; 2026 명조 아카이브 (팬메이드 비공식 페이지). 명조: 워더링 웨이브의 저작권은 쿠로게임즈에 있습니다.
     </p>
   </footer>
 </body>
