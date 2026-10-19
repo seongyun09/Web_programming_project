@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="잔상을 흡수해 빛나는 에코 결정">
+<rect width="480" height="300" fill="#F5F6F6"/>
+<g fill="none" stroke="#17202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="300" cy="150" r="70" stroke-opacity="0.60"/>
+<circle cx="300" cy="150" r="96" stroke-opacity="0.48"/>
+<circle cx="300" cy="150" r="122" stroke-opacity="0.36"/>
+<circle cx="300" cy="150" r="148" stroke-opacity="0.24"/>
+<circle cx="152" cy="111" r="3.7" fill="#17202B" stroke="none" fill-opacity="0.68"/>
+<circle cx="174" cy="123" r="2.0" fill="#17202B" stroke="none" fill-opacity="0.76"/>
+<circle cx="183" cy="198" r="3.7" fill="#17202B" stroke="none" fill-opacity="0.80"/>
+<circle cx="210" cy="125" r="3.9" fill="#17202B" stroke="none" fill-opacity="0.90"/>
+<circle cx="173" cy="154" r="3.2" fill="#17202B" stroke="none" fill-opacity="0.76"/>
+<circle cx="206" cy="116" r="3.9" fill="#17202B" stroke="none" fill-opacity="0.89"/>
+<circle cx="45" cy="151" r="3.9" fill="#17202B" stroke="none" fill-opacity="0.27"/>
+<circle cx="124" cy="173" r="2.2" fill="#17202B" stroke="none" fill-opacity="0.57"/>
+<circle cx="210" cy="134" r="1.9" fill="#17202B" stroke="none" fill-opacity="0.90"/>
+<circle cx="157" cy="121" r="1.7" fill="#17202B" stroke="none" fill-opacity="0.70"/>
+<circle cx="202" cy="127" r="3.0" fill="#17202B" stroke="none" fill-opacity="0.87"/>
+<circle cx="60" cy="143" r="3.2" fill="#17202B" stroke="none" fill-opacity="0.33"/>
+<circle cx="124" cy="140" r="2.3" fill="#17202B" stroke="none" fill-opacity="0.57"/>
+<circle cx="84" cy="160" r="2.7" fill="#17202B" stroke="none" fill-opacity="0.42"/>
+<circle cx="138" cy="137" r="2.7" fill="#17202B" stroke="none" fill-opacity="0.63"/>
+<circle cx="143" cy="165" r="1.6" fill="#17202B" stroke="none" fill-opacity="0.65"/>
+<circle cx="42" cy="151" r="1.6" fill="#17202B" stroke="none" fill-opacity="0.26"/>
+<circle cx="79" cy="157" r="3.6" fill="#17202B" stroke="none" fill-opacity="0.40"/>
+<circle cx="90" cy="133" r="3.5" fill="#17202B" stroke="none" fill-opacity="0.44"/>
+<circle cx="205" cy="135" r="2.9" fill="#17202B" stroke="none" fill-opacity="0.88"/>
+<circle cx="178" cy="103" r="1.6" fill="#17202B" stroke="none" fill-opacity="0.78"/>
+<circle cx="69" cy="144" r="3.9" fill="#17202B" stroke="none" fill-opacity="0.36"/>
+<circle cx="183" cy="120" r="3.4" fill="#17202B" stroke="none" fill-opacity="0.80"/>
+<circle cx="65" cy="158" r="3.9" fill="#17202B" stroke="none" fill-opacity="0.35"/>
+<circle cx="151" cy="138" r="2.4" fill="#17202B" stroke="none" fill-opacity="0.68"/>
+<circle cx="63" cy="150" r="3.4" fill="#17202B" stroke="none" fill-opacity="0.34"/>
+<polygon points="300,72 340,112 340,188 300,228 260,188 260,112" fill="#E6EAEC"/>
+<path d="M300 72 V228 M260 112 L300 140 L340 112 M260 188 L300 160 L340 188" stroke-opacity="0.45"/>
+<path d="M280 150 Q300 132 320 150 Q300 168 280 150 Z" fill="#F5F6F6"/>
+<circle cx="300" cy="150" r="7" fill="#F0CB3C"/>
+</g>
+</svg>

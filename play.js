@@ -28,6 +28,13 @@ const ELEMENT_NAMES = {
   havoc: "인멸",
 };
 
+// 공명자 사진: images/characters/<id>.png 가 있으면 이름 글자 대신 사진을 보여 준다.
+candidates.forEach((candidate) => {
+  const img = new Image();
+  img.onload = () => (candidate.photo = img.src);
+  img.src = `images/characters/${candidate.id}.png`;
+});
+
 // 고른 쪽을 잠깐 보여 준 뒤 다음 대결로 넘어가는 시간
 const PICK_DELAY = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 260;
 
@@ -70,7 +77,9 @@ function fillPick(button, candidate) {
   button.dataset.el = candidate.el;
   button.classList.remove("is-picked", "is-dropped");
   button.disabled = false;
-  button.querySelector(".wc-face").textContent = candidate.name[0];
+  const face = button.querySelector(".wc-face");
+  face.textContent = candidate.photo ? "" : candidate.name[0];
+  face.style.backgroundImage = candidate.photo ? `url("${candidate.photo}")` : "";
 
   const name = button.querySelector(".wc-name");
   name.textContent = candidate.name;
@@ -99,6 +108,12 @@ function showResult(winner) {
   winnerLabel.textContent = winner.name;
   winnerSeal.textContent = winner.name[0];
   winnerSeal.dataset.el = winner.el;
+  if (winner.photo) {
+    const photo = document.createElement("img");
+    photo.src = winner.photo;
+    photo.alt = "";
+    winnerSeal.appendChild(photo);
+  }
   profileLink.href = `char.html#${winner.id}`;
   // 고정 헤더에 가리지 않게 먼저 스크롤한 뒤 포커스를 옮긴다.
   result.scrollIntoView({ block: "start" });

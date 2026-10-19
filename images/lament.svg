@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="하늘을 가르는 균열 아래 무너진 도시">
+<rect width="480" height="300" fill="#F5F6F6"/>
+<g fill="none" stroke="#17202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<clipPath id="sky"><rect width="480" height="262"/></clipPath>
+<g clip-path="url(#sky)"><circle cx="300" cy="30" r="44" stroke-opacity="0.3"/>
+<circle cx="300" cy="30" r="84" stroke-opacity="0.3"/>
+<circle cx="300" cy="30" r="124" stroke-opacity="0.3"/>
+<circle cx="300" cy="30" r="164" stroke-opacity="0.3"/>
+<circle cx="300" cy="30" r="204" stroke-opacity="0.3"/>
+<circle cx="300" cy="30" r="244" stroke-opacity="0.3"/>
+<circle cx="300" cy="30" r="284" stroke-opacity="0.3"/>
+<circle cx="300" cy="30" r="324" stroke-opacity="0.3"/></g>
+<polygon points="296,0 314,0 306,38 324,60 302,96 318,122 286,176 294,120 278,98 298,64 286,36" fill="#F0CB3C"/>
+<path d="M20 262 L20 209 L29 215 L38 196 L47 197 L56 220 L56 262" fill="#E6EAEC"/>
+<path d="M29 227 h18" stroke-opacity="0.45"/>
+<path d="M68 262 L68 219 L76 223 L84 223 L92 212 L100 225 L100 262" fill="#E6EAEC"/>
+<path d="M77 242 h14" stroke-opacity="0.45"/>
+<path d="M110 262 L110 210 L117 219 L124 219 L130 217 L137 208 L137 262" fill="#E6EAEC"/>
+<path d="M147 262 L147 194 L154 203 L160 190 L167 195 L174 207 L174 262" fill="#E6EAEC"/>
+<path d="M156 218 h9" stroke-opacity="0.45"/>
+<path d="M156 240 h9" stroke-opacity="0.45"/>
+<path d="M182 262 L182 200 L193 209 L204 209 L214 211 L225 205 L225 262" fill="#E6EAEC"/>
+<path d="M191 223 h25" stroke-opacity="0.45"/>
+<path d="M191 245 h25" stroke-opacity="0.45"/>
+<path d="M230 262 L230 224 L241 213 L252 222 L263 228 L274 232 L274 262" fill="#E6EAEC"/>
+<path d="M239 239 h26" stroke-opacity="0.45"/>
+<path d="M283 262 L283 169 L293 165 L303 163 L313 181 L323 169 L323 262" fill="#E6EAEC"/>
+<path d="M292 210 h22" stroke-opacity="0.45"/>
+<path d="M335 262 L335 190 L345 185 L356 180 L366 190 L376 181 L376 262" fill="#E6EAEC"/>
+<path d="M344 203 h23" stroke-opacity="0.45"/>
+<path d="M344 225 h23" stroke-opacity="0.45"/>
+<path d="M382 262 L382 169 L392 182 L402 163 L413 185 L423 186 L423 262" fill="#E6EAEC"/>
+<path d="M391 237 h23" stroke-opacity="0.45"/>
+<path d="M432 262 L432 168 L443 176 L454 165 L466 153 L477 161 L477 262" fill="#E6EAEC"/>
+<path d="M441 205 h27" stroke-opacity="0.45"/>
+<path d="M441 249 h27" stroke-opacity="0.45"/>
+<path d="M0 262 H480"/>
+<path d="M0 282.0 L4 280.8 L8 280.1 L12 280.1 L16 280.8 L20 282.0 L24 283.2 L28 283.9 L32 283.9 L36 283.2 L40 282.0 L44 280.8 L48 280.1 L52 280.1 L56 280.8 L60 282.0 L64 283.2 L68 283.9 L72 283.9 L76 283.2 L80 282.0 L84 280.8 L88 280.1 L92 280.1 L96 280.8 L100 282.0 L104 283.2 L108 283.9 L112 283.9 L116 283.2 L120 282.0 L124 280.8 L128 280.1 L132 280.1 L136 280.8 L140 282.0 L144 283.2 L148 283.9 L152 283.9 L156 283.2 L160 282.0 L164 280.8 L168 280.1 L172 280.1 L176 280.8 L180 282.0 L184 283.2 L188 283.9 L192 283.9 L196 283.2 L200 282.0 L204 280.8 L208 280.1 L212 280.1 L216 280.8 L220 282.0 L224 283.2 L228 283.9 L232 283.9 L236 283.2 L240 282.0 L244 280.8 L248 280.1 L252 280.1 L256 280.8 L260 282.0 L264 283.2 L268 283.9 L272 283.9 L276 283.2 L280 282.0 L284 280.8 L288 280.1 L292 280.1 L296 280.8 L300 282.0 L304 283.2 L308 283.9 L312 283.9 L316 283.2 L320 282.0 L324 280.8 L328 280.1 L332 280.1 L336 280.8 L340 282.0 L344 283.2 L348 283.9 L352 283.9 L356 283.2 L360 282.0 L364 280.8 L368 280.1 L372 280.1 L376 280.8 L380 282.0 L384 283.2 L388 283.9 L392 283.9 L396 283.2 L400 282.0 L404 280.8 L408 280.1 L412 280.1 L416 280.8 L420 282.0 L424 283.2 L428 283.9 L432 283.9 L436 283.2 L440 282.0 L444 280.8 L448 280.1 L452 280.1 L456 280.8 L460 282.0 L464 283.2 L468 283.9 L472 283.9 L476 283.2 L480 282.0" stroke-opacity="0.5"/>
+</g>
+</svg>

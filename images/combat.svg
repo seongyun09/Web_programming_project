@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="교차하는 두 줄기 검격과 불꽃">
+<rect width="480" height="300" fill="#F5F6F6"/>
+<g fill="none" stroke="#17202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 250 C150 200 300 110 420 46" stroke-width="5"/>
+<path d="M80 264 C160 214 310 124 430 60" stroke-opacity="0.35"/>
+<path d="M60 60 C160 110 310 190 410 252" stroke-width="5"/>
+<path d="M72 46 C172 96 322 176 422 238" stroke-opacity="0.35" stroke-dasharray="2 10"/>
+<path d="M273.3 156.8 L287.0 159.5"/>
+<path d="M265.5 172.5 L283.5 188.4"/>
+<path d="M250.8 182.2 L255.3 195.5"/>
+<path d="M233.2 183.3 L228.5 206.8"/>
+<path d="M217.5 175.5 L208.2 186.0"/>
+<path d="M207.8 160.8 L185.0 168.4"/>
+<path d="M206.7 143.2 L193.0 140.5"/>
+<path d="M214.5 127.5 L196.5 111.6"/>
+<path d="M229.2 117.8 L224.7 104.5"/>
+<path d="M246.8 116.7 L251.5 93.2"/>
+<path d="M262.5 124.5 L271.8 114.0"/>
+<path d="M272.2 139.2 L295.0 131.6"/>
+<polygon points="240,118 248,142 272,150 248,158 240,182 232,158 208,150 232,142" fill="#F0CB3C"/>
+</g>
+</svg>

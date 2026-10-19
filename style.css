@@ -502,6 +502,19 @@ svg {
   border-top: 1px solid var(--ink);
 }
 
+/* 선화 일러스트 판 */
+.plate {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 480 / 300;
+  border-radius: 2px;
+  background: var(--paper);
+}
+
+.pillar .plate {
+  margin-bottom: 20px;
+}
+
 .pillar h3 {
   font-size: var(--fs-2xl);
   font-weight: 900;
@@ -593,7 +606,12 @@ svg {
 }
 
 .atlas dd {
+  display: grid;
+  gap: 16px;
   margin: 0;
+}
+
+.atlas dd p {
   max-width: 36em;
 }
 
@@ -774,6 +792,17 @@ svg {
   font-size: 1.625rem;
   line-height: 1;
   border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 사진 파일이 있으면 이름 글자 위를 덮는다 */
+.seal img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 [data-el="spectro"] .seal,
@@ -1207,8 +1236,10 @@ input:focus-visible + .chip {
 .wc-face {
   display: grid;
   place-items: center;
+  background-size: cover;
+  background-position: center top;
   aspect-ratio: 3 / 4;
-  background: var(--c, var(--ink));
+  background-color: var(--c, var(--ink));
   color: var(--paper);
   font-family: var(--serif);
   font-weight: 900;
@@ -1363,6 +1394,12 @@ input:focus-visible + .chip {
 
   .atlas > div {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .atlas dd {
+    grid-template-columns: minmax(200px, 5fr) 6fr;
+    align-items: start;
+    gap: 28px;
   }
 
   .glossary {

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="여섯 속성의 색이 이어진 고리">
+<rect width="480" height="300" fill="#F5F6F6"/>
+<g fill="none" stroke="#17202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="240" cy="150" r="128" stroke-opacity="0.25"/>
+<path d="M240.0 58.0 Q287.0 68.6 319.7 104.0" stroke-opacity="0.5"/>
+<path d="M240 150 L240.0 58.0" stroke-opacity="0.2"/>
+<path d="M319.7 104.0 Q334.0 150.0 319.7 196.0" stroke-opacity="0.5"/>
+<path d="M240 150 L319.7 104.0" stroke-opacity="0.2"/>
+<path d="M319.7 196.0 Q287.0 231.4 240.0 242.0" stroke-opacity="0.5"/>
+<path d="M240 150 L319.7 196.0" stroke-opacity="0.2"/>
+<path d="M240.0 242.0 Q193.0 231.4 160.3 196.0" stroke-opacity="0.5"/>
+<path d="M240 150 L240.0 242.0" stroke-opacity="0.2"/>
+<path d="M160.3 196.0 Q146.0 150.0 160.3 104.0" stroke-opacity="0.5"/>
+<path d="M240 150 L160.3 196.0" stroke-opacity="0.2"/>
+<path d="M160.3 104.0 Q193.0 68.6 240.0 58.0" stroke-opacity="0.5"/>
+<path d="M240 150 L160.3 104.0" stroke-opacity="0.2"/>
+<circle cx="240.0" cy="58.0" r="20" fill="#d9b400"/>
+<circle cx="319.7" cy="104.0" r="20" fill="#d9542a"/>
+<circle cx="319.7" cy="196.0" r="20" fill="#3592cf"/>
+<circle cx="240.0" cy="242.0" r="20" fill="#22a27a"/>
+<circle cx="160.3" cy="196.0" r="20" fill="#8a5fdc"/>
+<circle cx="160.3" cy="104.0" r="20" fill="#bd3169"/>
+<circle cx="240" cy="150" r="12" fill="#F0CB3C"/>
+</g>
+</svg>

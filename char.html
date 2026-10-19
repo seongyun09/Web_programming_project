@@ -58,9 +58,11 @@
         <input type="radio" name="el" id="f-havoc" class="sr-only">
         <label class="chip" for="f-havoc" data-el="havoc">인멸</label>
       </fieldset>
+      <!-- 공명자 사진: images/characters/<id>.png 로 저장하면 이름 도장 자리에 자동으로 나온다.
+           id는 각 li의 id와 같다 (예: jinhsi.png). 파일이 없으면 이름 도장이 그대로 보인다. -->
       <ul class="roster">
         <li class="res" id="rover" data-el="spectro">
-          <span class="seal" aria-hidden="true">방</span>
+          <span class="seal" aria-hidden="true">방<img src="images/characters/rover.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>방랑자</h3>
             <p class="res-meta"><span class="el-tag">회절</span><span>직검</span><span>메인 딜러</span></p>
@@ -69,7 +71,7 @@
           </div>
         </li>
         <li class="res" id="jinhsi" data-el="spectro">
-          <span class="seal" aria-hidden="true">금</span>
+          <span class="seal" aria-hidden="true">금<img src="images/characters/jinhsi.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>금희</h3>
             <p class="res-meta"><span class="el-tag">회절</span><span>대검</span><span>메인 딜러</span></p>
@@ -78,7 +80,7 @@
           </div>
         </li>
         <li class="res" id="changli" data-el="fusion">
-          <span class="seal" aria-hidden="true">장</span>
+          <span class="seal" aria-hidden="true">장<img src="images/characters/changli.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>장리</h3>
             <p class="res-meta"><span class="el-tag">용융</span><span>직검</span><span>서브 딜러</span></p>
@@ -87,7 +89,7 @@
           </div>
         </li>
         <li class="res" id="jiyan" data-el="aero">
-          <span class="seal" aria-hidden="true">기</span>
+          <span class="seal" aria-hidden="true">기<img src="images/characters/jiyan.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>기염</h3>
             <p class="res-meta"><span class="el-tag">기류</span><span>대검</span><span>메인 딜러</span></p>
@@ -96,7 +98,7 @@
           </div>
         </li>
         <li class="res" id="yinlin" data-el="electro">
-          <span class="seal" aria-hidden="true">음</span>
+          <span class="seal" aria-hidden="true">음<img src="images/characters/yinlin.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>음림</h3>
             <p class="res-meta"><span class="el-tag">전도</span><span>증폭기</span><span>서브 딜러</span></p>
@@ -105,7 +107,7 @@
           </div>
         </li>
         <li class="res" id="calcharo" data-el="electro">
-          <span class="seal" aria-hidden="true">카</span>
+          <span class="seal" aria-hidden="true">카<img src="images/characters/calcharo.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>카카루</h3>
             <p class="res-meta"><span class="el-tag">전도</span><span>대검</span><span>메인 딜러</span></p>
@@ -114,7 +116,7 @@
           </div>
         </li>
         <li class="res" id="encore" data-el="fusion">
-          <span class="seal" aria-hidden="true">앙</span>
+          <span class="seal" aria-hidden="true">앙<img src="images/characters/encore.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>앙코</h3>
             <p class="res-meta"><span class="el-tag">용융</span><span>증폭기</span><span>메인 딜러</span></p>
@@ -123,7 +125,7 @@
           </div>
         </li>
         <li class="res" id="verina" data-el="spectro">
-          <span class="seal" aria-hidden="true">벨</span>
+          <span class="seal" aria-hidden="true">벨<img src="images/characters/verina.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>벨리나</h3>
             <p class="res-meta"><span class="el-tag">회절</span><span>증폭기</span><span>힐러</span></p>
@@ -132,7 +134,7 @@
           </div>
         </li>
         <li class="res" id="lingyang" data-el="glacio">
-          <span class="seal" aria-hidden="true">능</span>
+          <span class="seal" aria-hidden="true">능<img src="images/characters/lingyang.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>능양</h3>
             <p class="res-meta"><span class="el-tag">응결</span><span>권갑</span><span>메인 딜러</span></p>
@@ -141,7 +143,7 @@
           </div>
         </li>
         <li class="res" id="jianxin" data-el="aero">
-          <span class="seal" aria-hidden="true">감</span>
+          <span class="seal" aria-hidden="true">감<img src="images/characters/jianxin.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>감심</h3>
             <p class="res-meta"><span class="el-tag">기류</span><span>권갑</span><span>서포터</span></p>
@@ -150,7 +152,7 @@
           </div>
         </li>
         <li class="res" id="camellya" data-el="havoc">
-          <span class="seal" aria-hidden="true">카</span>
+          <span class="seal" aria-hidden="true">카<img src="images/characters/camellya.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>카멜리아</h3>
             <p class="res-meta"><span class="el-tag">인멸</span><span>직검</span><span>메인 딜러</span></p>
@@ -159,7 +161,7 @@
           </div>
         </li>
         <li class="res" id="carlotta" data-el="glacio">
-          <span class="seal" aria-hidden="true">카</span>
+          <span class="seal" aria-hidden="true">카<img src="images/characters/carlotta.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>카를로타</h3>
             <p class="res-meta"><span class="el-tag">응결</span><span>권총</span><span>메인 딜러</span></p>
@@ -168,7 +170,7 @@
           </div>
         </li>
         <li class="res" id="shorekeeper" data-el="spectro">
-          <span class="seal" aria-hidden="true">파</span>
+          <span class="seal" aria-hidden="true">파<img src="images/characters/shorekeeper.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>파수인</h3>
             <p class="res-meta"><span class="el-tag">회절</span><span>증폭기</span><span>힐러</span></p>
@@ -177,7 +179,7 @@
           </div>
         </li>
         <li class="res" id="xiangliyao" data-el="electro">
-          <span class="seal" aria-hidden="true">상</span>
+          <span class="seal" aria-hidden="true">상<img src="images/characters/xiangliyao.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>상리요</h3>
             <p class="res-meta"><span class="el-tag">전도</span><span>권갑</span><span>메인 딜러</span></p>
@@ -186,7 +188,7 @@
           </div>
         </li>
         <li class="res" id="zhezhi" data-el="glacio">
-          <span class="seal" aria-hidden="true">절</span>
+          <span class="seal" aria-hidden="true">절<img src="images/characters/zhezhi.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>절지</h3>
             <p class="res-meta"><span class="el-tag">응결</span><span>증폭기</span><span>서브 딜러</span></p>
@@ -195,7 +197,7 @@
           </div>
         </li>
         <li class="res" id="phoebe" data-el="spectro">
-          <span class="seal" aria-hidden="true">페</span>
+          <span class="seal" aria-hidden="true">페<img src="images/characters/phoebe.png" alt="" loading="lazy" onerror="this.remove()"></span>
           <div>
             <h3>페비</h3>
             <p class="res-meta"><span class="el-tag">회절</span><span>증폭기</span><span>서브 딜러</span></p>
