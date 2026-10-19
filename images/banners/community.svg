@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-label="여러 목소리의 파문이 겹쳐 울리고 그 사이에 말풍선이 떠 있는 모습">
+<rect width="480" height="300" fill="#F5F6F6"/>
+<g fill="none" stroke="#17202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="150" cy="118" r="22.3" stroke-opacity="0.6"/>
+<circle cx="150" cy="118" r="46.3" stroke-opacity="0.5"/>
+<circle cx="150" cy="118" r="70.3" stroke-opacity="0.4"/>
+<circle cx="150" cy="118" r="94.3" stroke-opacity="0.3"/>
+<circle cx="150" cy="118" r="3.5" fill="#17202B" stroke="none"/>
+<circle cx="318" cy="104" r="21.3" stroke-opacity="0.6"/>
+<circle cx="318" cy="104" r="45.3" stroke-opacity="0.5"/>
+<circle cx="318" cy="104" r="69.3" stroke-opacity="0.4"/>
+<circle cx="318" cy="104" r="93.3" stroke-opacity="0.3"/>
+<circle cx="318" cy="104" r="3.5" fill="#17202B" stroke="none"/>
+<circle cx="262" cy="236" r="15.4" stroke-opacity="0.6"/>
+<circle cx="262" cy="236" r="39.4" stroke-opacity="0.5"/>
+<circle cx="262" cy="236" r="63.4" stroke-opacity="0.4"/>
+<circle cx="262" cy="236" r="87.4" stroke-opacity="0.3"/>
+<circle cx="262" cy="236" r="111.4" stroke-opacity="0.2"/>
+<circle cx="262" cy="236" r="3.5" fill="#17202B" stroke="none"/>
+<path d="M58 186 H96 Q108 186 108 198 V210 Q108 222 96 222 L62 222 L72 234 L60 222 H58 Q46 222 46 210 V198 Q46 186 58 186 Z" fill="#F5F6F6"/>
+<circle cx="64" cy="204" r="2.6" fill="#17202B" stroke="none"/>
+<circle cx="77" cy="204" r="2.6" fill="#17202B" stroke="none"/>
+<circle cx="90" cy="204" r="2.6" fill="#17202B" stroke="none"/>
+<path d="M384 168 H430 Q442 168 442 180 V196 Q442 208 430 208 L434 208 L422 220 L424 208 H384 Q372 208 372 196 V180 Q372 168 384 168 Z" fill="#F5F6F6"/>
+<path d="M386 182 H428" stroke-opacity="0.45"/>
+<path d="M386 194 H414" stroke-opacity="0.45"/>
+<path d="M388 34 H412 Q424 34 424 46 V52 Q424 64 412 64 L388 64 L398 76 L386 64 H388 Q376 64 376 52 V46 Q376 34 388 34 Z" fill="#E6EAEC"/>
+<path d="M389 49 C393 44 396 44 400 49 C404 54 407 54 411 49" stroke-opacity="0.7"/>
+<circle cx="238" cy="152" r="8" fill="#F0CB3C"/>
+</g>
+</svg>

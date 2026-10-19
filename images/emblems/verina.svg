@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="잎 덩굴 화환에 둘러싸인 활짝 핀 꽃과 새싹">
+<rect width="300" height="400" fill="#EFE9C5"/>
+<rect x="14" y="14" width="272" height="372" rx="2" fill="none" stroke="#17202B" stroke-width="1.5" stroke-opacity="0.35"/>
+<g fill="none" stroke="#17202B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 340 Q31 334 48 340 T82 340 T116 340 T150 340 T184 340 T218 340 T252 340 T286 340" stroke-width="2" stroke-opacity="0.45"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(94.5 260.8) rotate(-85.4)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(75.7 240.1) rotate(0.6)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(63.7 213.6) rotate(-49.6)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(60 183.3) rotate(35.2)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(63.3 157.5) rotate(-20.4)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(71.4 135.3) rotate(60.7)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(83.4 117.1) rotate(6.8)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(205.5 260.8) rotate(85.4)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(224.3 240.1) rotate(-0.6)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(236.3 213.6) rotate(49.6)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(240 183.5) rotate(-35.1)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(237.2 160.1) rotate(21.1)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(230.2 139.9) rotate(-60)" fill="#9F880D" stroke-width="2"/>
+<path d="M0 0 C7 -8 8 -20 0 -29 C-8 -20 -7 -8 0 0Z" transform="translate(219.3 123.1) rotate(-6.2)" fill="#9F880D" stroke-width="2"/>
+<path d="M150 280 C100 280 60 240 60 186 C60 140 84 106 114 96" stroke-width="2"/>
+<path d="M150 280 C200 280 240 240 240 186 C240 144 220 114 190 102" stroke-width="2"/>
+<path d="M114 96 q12 -4 14 4 q1 7 -7 6" stroke-width="2"/>
+<path d="M190 102 q-12 -5 -15 3 q-1 7 7 6" stroke-width="2"/>
+<path d="M150 280 V260" stroke-width="2"/>
+<path d="M150 266 C145 257 134 255 128 259 C134 268 145 270 150 266Z" fill="#9F880D" stroke-width="2"/>
+<path d="M150 262 C155 252 166 249 172 253 C167 263 156 266 150 262Z" fill="#d9b400" stroke-width="2"/>
+<path d="M0 0 C22 -12 28 -48 10 -62 Q0 -66 -10 -62 C-28 -48 -22 -12 0 0Z" transform="translate(150 178) rotate(0)" fill="#d9b400"/>
+<path d="M0 0 C22 -12 28 -48 10 -62 Q0 -66 -10 -62 C-28 -48 -22 -12 0 0Z" transform="translate(150 178) rotate(90)" fill="#d9b400"/>
+<path d="M0 0 C22 -12 28 -48 10 -62 Q0 -66 -10 -62 C-28 -48 -22 -12 0 0Z" transform="translate(150 178) rotate(180)" fill="#d9b400"/>
+<path d="M0 0 C22 -12 28 -48 10 -62 Q0 -66 -10 -62 C-28 -48 -22 -12 0 0Z" transform="translate(150 178) rotate(270)" fill="#d9b400"/>
+<path d="M0 0 C22 -12 28 -48 10 -62 Q0 -66 -10 -62 C-28 -48 -22 -12 0 0Z" transform="translate(150 178) rotate(45)" fill="#d9b400"/>
+<path d="M0 0 C22 -12 28 -48 10 -62 Q0 -66 -10 -62 C-28 -48 -22 -12 0 0Z" transform="translate(150 178) rotate(135)" fill="#d9b400"/>
+<path d="M0 0 C22 -12 28 -48 10 -62 Q0 -66 -10 -62 C-28 -48 -22 -12 0 0Z" transform="translate(150 178) rotate(225)" fill="#d9b400"/>
+<path d="M0 0 C22 -12 28 -48 10 -62 Q0 -66 -10 -62 C-28 -48 -22 -12 0 0Z" transform="translate(150 178) rotate(315)" fill="#d9b400"/>
+<path d="M0 0 C10 -10 12 -30 4 -40 Q0 -42 -4 -40 C-12 -30 -10 -10 0 0Z" transform="translate(150 178) rotate(22.5)" fill="#F5F6F6" stroke-width="2"/>
+<path d="M0 0 C10 -10 12 -30 4 -40 Q0 -42 -4 -40 C-12 -30 -10 -10 0 0Z" transform="translate(150 178) rotate(67.5)" fill="#F5F6F6" stroke-width="2"/>
+<path d="M0 0 C10 -10 12 -30 4 -40 Q0 -42 -4 -40 C-12 -30 -10 -10 0 0Z" transform="translate(150 178) rotate(112.5)" fill="#F5F6F6" stroke-width="2"/>
+<path d="M0 0 C10 -10 12 -30 4 -40 Q0 -42 -4 -40 C-12 -30 -10 -10 0 0Z" transform="translate(150 178) rotate(157.5)" fill="#F5F6F6" stroke-width="2"/>
+<path d="M0 0 C10 -10 12 -30 4 -40 Q0 -42 -4 -40 C-12 -30 -10 -10 0 0Z" transform="translate(150 178) rotate(202.5)" fill="#F5F6F6" stroke-width="2"/>
+<path d="M0 0 C10 -10 12 -30 4 -40 Q0 -42 -4 -40 C-12 -30 -10 -10 0 0Z" transform="translate(150 178) rotate(247.5)" fill="#F5F6F6" stroke-width="2"/>
+<path d="M0 0 C10 -10 12 -30 4 -40 Q0 -42 -4 -40 C-12 -30 -10 -10 0 0Z" transform="translate(150 178) rotate(292.5)" fill="#F5F6F6" stroke-width="2"/>
+<path d="M0 0 C10 -10 12 -30 4 -40 Q0 -42 -4 -40 C-12 -30 -10 -10 0 0Z" transform="translate(150 178) rotate(337.5)" fill="#F5F6F6" stroke-width="2"/>
+<circle cx="150" cy="178" r="13" fill="#F0CB3C"/>
+</g>
+</svg>

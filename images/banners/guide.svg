@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-label="나침반 옆으로 다섯 이정표를 지나 목적지까지 굽이치는 길">
+<rect width="480" height="300" fill="#F5F6F6"/>
+<g fill="none" stroke="#17202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M330 214 C360 192 420 196 432 222 C444 248 400 262 364 254 C330 246 312 230 330 214 Z" stroke-opacity="0.35"/>
+<path d="M350 220 C370 206 410 210 416 226 C422 242 394 248 372 242 C350 236 340 228 350 220 Z" stroke-opacity="0.3"/>
+<path d="M372 226 C382 218 402 222 402 230 C402 238 384 238 376 234 C368 231 366 229 372 226 Z" stroke-opacity="0.25"/>
+<path d="M232 34 C262 22 314 26 320 44 C326 62 290 70 262 64 C234 58 214 44 232 34 Z" stroke-opacity="0.3"/>
+<path d="M250 40 C268 34 298 36 302 46 C306 56 284 58 268 55 C252 52 240 46 250 40 Z" stroke-opacity="0.25"/>
+<path d="M20 296 C60 248 150 268 178 222 C204 180 138 158 180 122 C222 88 296 148 344 118 C384 92 378 66 418 54" stroke-width="26"/>
+<path d="M20 296 C60 248 150 268 178 222 C204 180 138 158 180 122 C222 88 296 148 344 118 C384 92 378 66 418 54" stroke="#E6EAEC" stroke-width="22"/>
+<path d="M20 296 C60 248 150 268 178 222 C204 180 138 158 180 122 C222 88 296 148 344 118 C384 92 378 66 418 54" stroke-opacity="0.4" stroke-dasharray="2 10"/>
+<path d="M84 214 v-6 M80 214 l-1.5 -4 M88 214 l1.5 -4" stroke-opacity="0.4"/>
+<path d="M104 226 v-6 M100 226 l-1.5 -4 M108 226 l1.5 -4" stroke-opacity="0.4"/>
+<path d="M252 184 v-6 M248 184 l-1.5 -4 M256 184 l1.5 -4" stroke-opacity="0.4"/>
+<path d="M268 196 v-6 M264 196 l-1.5 -4 M272 196 l1.5 -4" stroke-opacity="0.4"/>
+<path d="M444 118 v-6 M440 118 l-1.5 -4 M448 118 l1.5 -4" stroke-opacity="0.4"/>
+<path d="M176 284 v-6 M172 284 l-1.5 -4 M180 284 l1.5 -4" stroke-opacity="0.4"/>
+<circle cx="67.4" cy="267.3" r="7" fill="#F5F6F6"/>
+<circle cx="67.4" cy="267.3" r="2.2" fill="#17202B" stroke="none"/>
+<circle cx="178" cy="222" r="7" fill="#F5F6F6"/>
+<circle cx="178" cy="222" r="2.2" fill="#17202B" stroke="none"/>
+<circle cx="190.7" cy="115.6" r="7" fill="#F5F6F6"/>
+<circle cx="190.7" cy="115.6" r="2.2" fill="#17202B" stroke="none"/>
+<circle cx="311.7" cy="126.7" r="7" fill="#F5F6F6"/>
+<circle cx="311.7" cy="126.7" r="2.2" fill="#17202B" stroke="none"/>
+<circle cx="418" cy="54" r="17" stroke-opacity="0.35"/>
+<path d="M418 54 V20"/>
+<path d="M418 20 L435 25 L418 30 Z" fill="#E6EAEC"/>
+<circle cx="418" cy="54" r="10" fill="#F0CB3C"/>
+<circle cx="74" cy="78" r="30" stroke-opacity="0.35"/>
+<circle cx="74" cy="78" r="22" fill="#F5F6F6" stroke-opacity="0.6"/>
+<path d="M99 78 L104 78" stroke-opacity="0.45"/>
+<path d="M91.7 95.7 L95.2 99.2" stroke-opacity="0.45"/>
+<path d="M74 103 L74 108" stroke-opacity="0.45"/>
+<path d="M56.3 95.7 L52.8 99.2" stroke-opacity="0.45"/>
+<path d="M49 78 L44 78" stroke-opacity="0.45"/>
+<path d="M56.3 60.3 L52.8 56.8" stroke-opacity="0.45"/>
+<path d="M74 53 L74 48" stroke-opacity="0.45"/>
+<path d="M91.7 60.3 L95.2 56.8" stroke-opacity="0.45"/>
+<path d="M74 52 L79 78 L69 78 Z" fill="#17202B"/>
+<path d="M74 104 L79 78 L69 78 Z" fill="#F5F6F6"/>
+<path d="M56 78 L74 74 L74 82 Z" fill="#E6EAEC"/>
+<path d="M92 78 L74 74 L74 82 Z" fill="#E6EAEC"/>
+<path d="M70.5 42 V33 L77.5 42 V33" stroke-width="1.6"/>
+</g>
+</svg>

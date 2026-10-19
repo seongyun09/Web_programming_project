@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="번개가 양옆을 가르는 인형 조종대와 실에 매달린 작은 인형">
+<rect width="300" height="400" fill="#E0D8F1"/>
+<rect x="14" y="14" width="272" height="372" rx="2" fill="none" stroke="#17202B" stroke-width="1.5" stroke-opacity="0.35"/>
+<g fill="none" stroke="#17202B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 340 Q31 334 48 340 T82 340 T116 340 T150 340 T184 340 T218 340 T252 340 T286 340" stroke-width="2" stroke-opacity="0.45"/>
+<path d="M63.9 135.3 L41.8 188 L58.8 188 L45.2 240.7 L84.3 174.4 L66.4 174.4 L77.5 135.3 Z" fill="#8a5fdc"/>
+<path d="M236.2 155.3 L258.3 208 L241.3 208 L254.9 260.7 L215.8 194.4 L233.6 194.4 L222.6 155.3 Z" fill="#8a5fdc"/>
+<path d="M62.2 147.2 L52 174.4 M237.9 167.2 L248.1 194.4" stroke="#F5F6F6" stroke-width="2" stroke-opacity="0.8"/>
+<path d="M80 106 L100 210 M220 106 L200 210 M150 154 L150 176" stroke-width="1.5" stroke-opacity="0.65"/>
+<path d="M150 56 V46" stroke-width="2"/>
+<circle cx="150" cy="41" r="5" stroke-width="2"/>
+<rect x="64" y="88" width="172" height="18" rx="9" fill="#8a5fdc"/>
+<rect x="140" y="56" width="20" height="98" rx="10" fill="#684CA7"/>
+<circle cx="80" cy="97" r="3" fill="#17202B" stroke="none"/>
+<circle cx="220" cy="97" r="3" fill="#17202B" stroke="none"/>
+<path d="M141 222 L120 234 L100 212 M159 222 L180 234 L200 212" stroke-width="6"/>
+<path d="M139 290 L135 312 L126 315 M161 290 L170 308 L180 305" stroke-width="6"/>
+<path d="M140 214 L160 214 L192 284 Q150 300 108 284 Z" fill="#8a5fdc"/>
+<path d="M116 274 Q150 286 184 274" stroke-width="1.5" stroke-opacity="0.5"/>
+<path d="M136 214 L164 214 L168 226 Q150 233 132 226 Z" fill="#684CA7"/>
+<circle cx="150" cy="194" r="18" fill="#F5F6F6"/>
+<path d="M132.3 190 A18 18 0 0 1 167.7 190 Q150 185 132.3 190 Z" fill="#684CA7" stroke-width="2"/>
+<circle cx="100" cy="210" r="4.5" fill="#F5F6F6" stroke-width="2"/>
+<circle cx="200" cy="210" r="4.5" fill="#F5F6F6" stroke-width="2"/>
+<path d="M238 59 L241.5 68.5 L251 72 L241.5 75.5 L238 85 L234.5 75.5 L225 72 L234.5 68.5 Z" fill="#F0CB3C" stroke-width="2"/>
+</g>
+</svg>

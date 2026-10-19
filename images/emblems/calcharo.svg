@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="넓은 대검을 등진 각진 늑대 가면">
+<rect width="300" height="400" fill="#E0D8F1"/>
+<rect x="14" y="14" width="272" height="372" rx="2" fill="none" stroke="#17202B" stroke-width="1.5" stroke-opacity="0.35"/>
+<g fill="none" stroke="#17202B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 340 Q31 334 48 340 T82 340 T116 340 T150 340 T184 340 T218 340 T252 340 T286 340" stroke-width="2" stroke-opacity="0.45"/>
+<path d="M150 66 L170 92 L170 270 L130 270 L130 92Z" fill="#F5F6F6"/>
+<path d="M150 100 V150" stroke-width="2" stroke-opacity="0.5"/>
+<path d="M100 264 L200 264 L192 278 L108 278Z" fill="#684CA7"/>
+<rect x="142" y="278" width="16" height="22" rx="2" fill="#17202B"/>
+<circle cx="150" cy="306" r="8" fill="#8a5fdc"/>
+<path d="M94 118 L126 154 L150 148 L174 154 L206 118 L212 172 L224 198 L206 216 L218 232 L194 230 L166 252 L150 266 L134 252 L106 230 L82 232 L94 216 L76 198 L88 172Z" fill="#8a5fdc"/>
+<path d="M150 148 L174 154 L150 196Z" fill="#684CA7" stroke="none"/>
+<path d="M76 198 L94 216 L82 232 L106 230 L134 252 L134 232Z" fill="#684CA7" stroke="none"/>
+<path d="M224 198 L206 216 L218 232 L194 230 L166 252 L166 232Z" fill="#684CA7" stroke="none"/>
+<path d="M98 130 L120 156 L94 166Z" fill="#684CA7" stroke-width="1.5"/>
+<path d="M202 130 L180 156 L206 166Z" fill="#684CA7" stroke-width="1.5"/>
+<path d="M150 196 L166 232 L166 252 L150 266 L134 252 L134 232Z" fill="#E6EAEC"/>
+<path d="M126 154 L150 196 L174 154 M150 148 V196 M88 172 L134 232 M212 172 L166 232 M76 198 L134 232 M224 198 L166 232" stroke-width="1.5" stroke-opacity="0.55"/>
+<path d="M102 188 L138 200 L114 206Z" fill="#17202B"/>
+<path d="M198 188 L162 200 L186 206Z" fill="#17202B"/>
+<path d="M142 244 L158 244 L150 254Z" fill="#17202B"/>
+<circle cx="182" cy="200" r="3.2" fill="#F0CB3C" stroke="none"/>
+</g>
+</svg>

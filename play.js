@@ -28,10 +28,12 @@ const ELEMENT_NAMES = {
   havoc: "인멸",
 };
 
-// 공명자 사진: images/characters/<id>.png 가 있으면 이름 글자 대신 사진을 보여 준다.
+// 카드 그림: 기본은 images/emblems/<id>.svg 문장 카드.
+// images/characters/<id>.png 사진이 있으면 그 사진을 대신 쓴다.
 candidates.forEach((candidate) => {
+  candidate.art = `images/emblems/${candidate.id}.svg`;
   const img = new Image();
-  img.onload = () => (candidate.photo = img.src);
+  img.onload = () => (candidate.art = img.src);
   img.src = `images/characters/${candidate.id}.png`;
 });
 
@@ -49,7 +51,7 @@ const picks = [document.getElementById("wc-left"), document.getElementById("wc-r
 const result = document.getElementById("wc-result");
 const resultTitle = document.getElementById("wc-result-title");
 const winnerLabel = document.getElementById("wc-winner");
-const winnerSeal = document.getElementById("wc-seal");
+const winnerArt = document.getElementById("wc-art");
 const profileLink = document.getElementById("wc-profile");
 const restartBtn = document.getElementById("wc-restart");
 
@@ -77,9 +79,7 @@ function fillPick(button, candidate) {
   button.dataset.el = candidate.el;
   button.classList.remove("is-picked", "is-dropped");
   button.disabled = false;
-  const face = button.querySelector(".wc-face");
-  face.textContent = candidate.photo ? "" : candidate.name[0];
-  face.style.backgroundImage = candidate.photo ? `url("${candidate.photo}")` : "";
+  button.querySelector(".wc-face").style.backgroundImage = `url("${candidate.art}")`;
 
   const name = button.querySelector(".wc-name");
   name.textContent = candidate.name;
@@ -106,14 +106,8 @@ function showResult(winner) {
   result.hidden = false;
 
   winnerLabel.textContent = winner.name;
-  winnerSeal.textContent = winner.name[0];
-  winnerSeal.dataset.el = winner.el;
-  if (winner.photo) {
-    const photo = document.createElement("img");
-    photo.src = winner.photo;
-    photo.alt = "";
-    winnerSeal.appendChild(photo);
-  }
+  winnerArt.dataset.el = winner.el;
+  winnerArt.style.backgroundImage = `url("${winner.art}")`;
   profileLink.href = `char.html#${winner.id}`;
   // 고정 헤더에 가리지 않게 먼저 스크롤한 뒤 포커스를 옮긴다.
   result.scrollIntoView({ block: "start" });

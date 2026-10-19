@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-label="여섯 속성의 색을 단 깃발이 바람에 나부끼며 나란히 선 모습">
+<rect width="480" height="300" fill="#F5F6F6"/>
+<g fill="none" stroke="#17202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M24 92 C44 86 60 96 80 90" stroke-opacity="0.3"/>
+<path d="M20 124 C36 119 50 127 66 122" stroke-opacity="0.3"/>
+<path d="M428 150 C440 146 452 152 462 148" stroke-opacity="0.3"/>
+<rect x="28" y="248" width="424" height="12" fill="#E6EAEC"/>
+<path d="M16 270 H464" stroke-opacity="0.45"/>
+<path d="M48 248 V74"/>
+<circle cx="48" cy="71" r="3" fill="#17202B"/>
+<rect x="41" y="240" width="14" height="8" fill="#F5F6F6"/>
+<path d="M48 86 H88"/>
+<path d="M48 86 H84 C89 117.2 80 153.6 86 190 L68 176 L48 192 L48 86 Z" fill="#d9b400"/>
+<path d="M53 97 H80" stroke="#9F880D"/>
+<path d="M66 110 L72 118 L66 126 L60 118 Z" fill="#EFE9C5" stroke="#9F880D" stroke-width="1.5"/>
+<path d="M103 248 V66"/>
+<circle cx="103" cy="63" r="3" fill="#17202B"/>
+<rect x="96" y="240" width="14" height="8" fill="#F5F6F6"/>
+<path d="M103 78 H143"/>
+<path d="M103 78 H139 C145.2 110.4 133.8 148.2 141 186 L123 172 L103 188 L103 78 Z" fill="#d9542a"/>
+<path d="M108 89 H135" stroke="#9F442A"/>
+<path d="M121 102 L127 110 L121 118 L115 110 Z" fill="#EFD6CD" stroke="#9F442A" stroke-width="1.5"/>
+<path d="M158 248 V60"/>
+<circle cx="158" cy="57" r="3" fill="#17202B"/>
+<rect x="151" y="240" width="14" height="8" fill="#F5F6F6"/>
+<path d="M158 72 H198"/>
+<path d="M158 72 H194 C201.4 105.6 187.6 144.8 196 184 L178 170 L158 186 L158 72 Z" fill="#3592cf"/>
+<path d="M163 83 H190" stroke="#2C709E"/>
+<path d="M176 96 L182 104 L176 112 L170 104 Z" fill="#CFE2EE" stroke="#2C709E" stroke-width="1.5"/>
+<path d="M282 248 V60"/>
+<circle cx="282" cy="57" r="3" fill="#17202B"/>
+<rect x="275" y="240" width="14" height="8" fill="#F5F6F6"/>
+<path d="M282 72 H322"/>
+<path d="M282 72 H318 C323 105.6 314 144.8 320 184 L302 170 L282 186 L282 72 Z" fill="#22a27a"/>
+<path d="M287 83 H314" stroke="#1F7B62"/>
+<path d="M300 96 L306 104 L300 112 L294 104 Z" fill="#CBE5DD" stroke="#1F7B62" stroke-width="1.5"/>
+<path d="M337 248 V66"/>
+<circle cx="337" cy="63" r="3" fill="#17202B"/>
+<rect x="330" y="240" width="14" height="8" fill="#F5F6F6"/>
+<path d="M337 78 H377"/>
+<path d="M337 78 H373 C379.2 110.4 367.8 148.2 375 186 L357 172 L337 188 L337 78 Z" fill="#8a5fdc"/>
+<path d="M342 89 H369" stroke="#684CA7"/>
+<path d="M355 102 L361 110 L355 118 L349 110 Z" fill="#E0D8F1" stroke="#684CA7" stroke-width="1.5"/>
+<path d="M392 248 V74"/>
+<circle cx="392" cy="71" r="3" fill="#17202B"/>
+<rect x="385" y="240" width="14" height="8" fill="#F5F6F6"/>
+<path d="M392 86 H432"/>
+<path d="M392 86 H428 C435.4 117.2 421.6 153.6 430 190 L412 176 L392 192 L392 86 Z" fill="#bd3169"/>
+<path d="M397 97 H424" stroke="#8B2C56"/>
+<path d="M410 110 L416 118 L410 126 L404 118 Z" fill="#EACFDA" stroke="#8B2C56" stroke-width="1.5"/>
+<path d="M240 248 V49"/>
+<rect x="232" y="240" width="16" height="8" fill="#F5F6F6"/>
+<path d="M255 40 L261 40" stroke-opacity="0.5"/>
+<path d="M250.6 50.6 L254.8 54.8" stroke-opacity="0.5"/>
+<path d="M240 55 L240 61" stroke-opacity="0.5"/>
+<path d="M229.4 50.6 L225.2 54.8" stroke-opacity="0.5"/>
+<path d="M225 40 L219 40" stroke-opacity="0.5"/>
+<path d="M229.4 29.4 L225.2 25.2" stroke-opacity="0.5"/>
+<path d="M240 25 L240 19" stroke-opacity="0.5"/>
+<path d="M250.6 29.4 L254.8 25.2" stroke-opacity="0.5"/>
+<circle cx="240" cy="40" r="9" fill="#F0CB3C"/>
+</g>
+</svg>

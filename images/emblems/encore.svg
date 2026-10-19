@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="나란히 앉은 불꽃 양털의 양 인형 두 마리">
+<rect width="300" height="400" fill="#EFD6CD"/>
+<rect x="14" y="14" width="272" height="372" rx="2" fill="none" stroke="#17202B" stroke-width="1.5" stroke-opacity="0.35"/>
+<g fill="none" stroke="#17202B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 340 Q31 334 48 340 T82 340 T116 340 T150 340 T184 340 T218 340 T252 340 T286 340" stroke-width="2" stroke-opacity="0.45"/>
+<rect x="180" y="242" width="18" height="16" rx="8" fill="#9F442A"/>
+<rect x="214" y="242" width="18" height="16" rx="8" fill="#9F442A"/>
+<path d="M0 4 C-8 2 -10 -7 -6 -15 C-4 -11 -2 -10 -1 -12 C-2 -18 1 -23 6 -27 C5 -20 10 -15 9 -6 C8 -1 4 4 0 4Z" transform="translate(206 133) rotate(0) scale(1.15)" fill="#9F442A" stroke-width="1.3"/>
+<path d="M0 4 C-8 2 -10 -7 -6 -15 C-4 -11 -2 -10 -1 -12 C-2 -18 1 -23 6 -27 C5 -20 10 -15 9 -6 C8 -1 4 4 0 4Z" transform="translate(237.2 141) rotate(28.3) scale(0.85)" fill="#9F442A" stroke-width="1.8"/>
+<path d="M221.5 137.9 A18.9 18.9 0 0 1 248.4 152.4 A18.3 18.3 0 0 1 264 177.5 A18 18 0 0 1 264 206.5 A18.3 18.3 0 0 1 248.4 231.6 A18.9 18.9 0 0 1 221.5 246.1 A19.3 19.3 0 0 1 190.5 246.1 A18.9 18.9 0 0 1 163.6 231.6 A18.3 18.3 0 0 1 148 206.5 A18 18 0 0 1 148 177.5 A18.3 18.3 0 0 1 163.6 152.4 A18.9 18.9 0 0 1 190.5 137.9 A19.3 19.3 0 0 1 221.5 137.9Z" fill="#d9542a"/>
+<ellipse cx="176" cy="192" rx="13" ry="7" transform="rotate(28 176 192)" fill="#9F442A"/>
+<ellipse cx="236" cy="192" rx="13" ry="7" transform="rotate(-28 236 192)" fill="#9F442A"/>
+<ellipse cx="206" cy="200" rx="25" ry="22" fill="#F5F6F6"/>
+<circle cx="196" cy="198" r="5" fill="#17202B" stroke="none"/>
+<circle cx="216" cy="198" r="5" fill="#17202B" stroke="none"/>
+<path d="M201 210 q2.5 3 5 0 q2.5 3 5 0" stroke-width="1.5"/>
+<rect x="70" y="260" width="18" height="16" rx="8" fill="#9F442A"/>
+<rect x="104" y="260" width="18" height="16" rx="8" fill="#9F442A"/>
+<path d="M0 4 C-8 2 -10 -7 -6 -15 C-4 -11 -2 -10 -1 -12 C-2 -18 1 -23 6 -27 C5 -20 10 -15 9 -6 C8 -1 4 4 0 4Z" transform="translate(65.1 150.2) rotate(-26.2) scale(0.85)" fill="#9F442A" stroke-width="1.8"/>
+<path d="M0 4 C-8 2 -10 -7 -6 -15 C-4 -11 -2 -10 -1 -12 C-2 -18 1 -23 6 -27 C5 -20 10 -15 9 -6 C8 -1 4 4 0 4Z" transform="translate(96 143) rotate(0) scale(1.15)" fill="#9F442A" stroke-width="1.3"/>
+<path d="M111.3 147.7 A18.7 18.7 0 0 1 138.4 161.1 A18.2 18.2 0 0 1 155.8 184.7 A17.8 17.8 0 0 1 159.5 213.2 A18 18 0 0 1 148.7 240.1 A18.5 18.5 0 0 1 125.7 259.1 A18.9 18.9 0 0 1 96 266 A18.9 18.9 0 0 1 66.3 259.1 A18.5 18.5 0 0 1 43.3 240.1 A18 18 0 0 1 32.5 213.2 A17.8 17.8 0 0 1 36.2 184.7 A18.2 18.2 0 0 1 53.6 161.1 A18.7 18.7 0 0 1 80.7 147.7 A19 19 0 0 1 111.3 147.7Z" fill="#d9542a"/>
+<ellipse cx="66" cy="206" rx="13" ry="7" transform="rotate(28 66 206)" fill="#9F442A"/>
+<ellipse cx="126" cy="206" rx="13" ry="7" transform="rotate(-28 126 206)" fill="#9F442A"/>
+<ellipse cx="96" cy="214" rx="25" ry="22" fill="#F5F6F6"/>
+<circle cx="86" cy="212" r="5" fill="#17202B" stroke="none"/>
+<circle cx="106" cy="212" r="5" fill="#17202B" stroke="none"/>
+<path d="M91 224 q2.5 3 5 0 q2.5 3 5 0" stroke-width="1.5"/>
+<path d="M151 111 L153.8 118.1 L161.5 118.6 L155.6 123.5 L157.5 130.9 L151 126.8 L144.5 130.9 L146.4 123.5 L140.5 118.6 L148.2 118.1Z" fill="#F0CB3C" stroke-width="1.5"/>
+</g>
+</svg>

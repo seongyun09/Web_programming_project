@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="파도 마루에 서서 커다란 공명 고리를 바라보는 방랑자의 뒷모습">
+<rect width="300" height="400" fill="#EFE9C5"/>
+<rect x="14" y="14" width="272" height="372" rx="2" fill="none" stroke="#17202B" stroke-width="1.5" stroke-opacity="0.35"/>
+<path d="M14 340 Q31 334 48 340 T82 340 T116 340 T150 340 T184 340 T218 340 T252 340 T286 340" fill="none" stroke="#17202B" stroke-width="2" stroke-opacity="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="none" stroke="#17202B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="150" cy="138" r="100" stroke-width="2" stroke-opacity="0.4"/>
+<circle cx="150" cy="138" r="85" fill="#d9b400"/>
+<circle cx="150" cy="138" r="63" stroke="#9F880D"/>
+<circle cx="150" cy="138" r="40" fill="#9F880D"/>
+<path d="M150 117 Q153.5 134.5 171 138 Q153.5 141.5 150 159 Q146.5 141.5 129 138 Q146.5 134.5 150 117 Z" fill="#F0CB3C"/>
+<path d="M159 251 C170 252 182 258 192 256 C184 264 172 266 160 262 Z" fill="#17202B"/>
+<path d="M150 229 C156 229 159 234 158.5 240 C163 242 165 248 165 256 L167 276 C168 288 171 296 176 304 Q163 300 150 304 Q137 300 124 304 C129 296 132 288 133 276 L135 256 C135 248 137 242 141.5 240 C141 234 144 229 150 229 Z" fill="#17202B"/>
+<path d="M48 340 C88 338 110 320 128 307 C141 298 160 296 178 302 C200 309 220 330 252 340 Q235 334 218 340 T184 340 T150 340 T116 340 T82 340 T48 340 Z" fill="#d9b400" stroke="none"/>
+<path d="M48 340 C88 338 110 320 128 307 C141 298 160 296 178 302 C200 309 220 330 252 340"/>
+<path d="M186 306 C200 312 206 324 198 330 C192 334 186 328 190 323 C193 320 197 322 197 325"/>
+<path d="M108 324 C124 313 142 308 160 309 M132 332 C146 326 160 324 174 326" stroke="#F5F6F6" stroke-width="3"/>
+</g>
+</svg>

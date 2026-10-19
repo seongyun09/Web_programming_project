@@ -528,7 +528,18 @@ svg {
 
 /* ===== 서브 페이지 머리 ===== */
 .page-head {
+  display: grid;
+  gap: 24px 48px;
   padding-top: 48px;
+}
+
+.page-head .page-wave,
+.page-head .toc {
+  grid-column: 1 / -1;
+}
+
+.page-plate {
+  max-width: 480px;
 }
 
 .page-head + .block {
@@ -551,7 +562,7 @@ svg {
 
 .page-wave {
   height: 40px;
-  margin: 32px 0 16px;
+  margin: 8px 0 0;
   background: url("wave.svg") left center / 100% 100% no-repeat;
 }
 
@@ -779,44 +790,6 @@ svg {
   background: var(--c);
 }
 
-/* 도장 모양 이름 표식 */
-.seal {
-  display: grid;
-  place-items: center;
-  width: 56px;
-  height: 56px;
-  background: var(--c, var(--ink));
-  color: var(--paper);
-  font-family: var(--serif);
-  font-weight: 900;
-  font-size: 1.625rem;
-  line-height: 1;
-  border-radius: 2px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* 사진 파일이 있으면 이름 글자 위를 덮는다 */
-.seal img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-[data-el="spectro"] .seal,
-.seal[data-el="spectro"] {
-  color: var(--ink);
-}
-
-.seal-lg {
-  width: 96px;
-  height: 96px;
-  font-size: 3rem;
-  margin: 0 auto 20px;
-}
-
 /* ===== 필터 칩 ===== */
 .filter {
   display: flex;
@@ -882,10 +855,28 @@ input:focus-visible + .chip {
 
 .res {
   display: grid;
-  grid-template-columns: 56px 1fr;
+  grid-template-columns: 72px 1fr;
   gap: 20px;
   padding: 28px 0;
   border-top: 1px solid var(--line);
+}
+
+.res-art {
+  position: relative;
+  display: block;
+  width: 72px;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--c);
+}
+
+.res-art img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .res h3 {
@@ -1240,15 +1231,6 @@ input:focus-visible + .chip {
   background-position: center top;
   aspect-ratio: 3 / 4;
   background-color: var(--c, var(--ink));
-  color: var(--paper);
-  font-family: var(--serif);
-  font-weight: 900;
-  font-size: clamp(3rem, 11vw, 6.5rem);
-  line-height: 1;
-}
-
-.wc-pick[data-el="spectro"] .wc-face {
-  color: var(--ink);
 }
 
 .wc-name {
@@ -1282,6 +1264,15 @@ input:focus-visible + .chip {
   text-align: center;
   scroll-margin-top: 96px;
   animation: post-in 360ms var(--ease-out);
+}
+
+.winner-art {
+  display: block;
+  width: 160px;
+  aspect-ratio: 3 / 4;
+  margin: 0 auto 24px;
+  border-radius: 2px;
+  background: var(--c, var(--ink)) center / cover no-repeat;
 }
 
 .wc-result h3 {
@@ -1394,6 +1385,15 @@ input:focus-visible + .chip {
 
   .atlas > div {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .page-head {
+    grid-template-columns: 7fr 5fr;
+    align-items: end;
+  }
+
+  .page-plate {
+    justify-self: end;
   }
 
   .atlas dd {

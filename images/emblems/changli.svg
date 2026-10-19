@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="기울어진 바둑판에서 피어오르는 봉황 깃털 모양의 불꽃">
+<rect width="300" height="400" fill="#EFD6CD"/>
+<rect x="14" y="14" width="272" height="372" rx="2" fill="none" stroke="#17202B" stroke-width="1.5" stroke-opacity="0.35"/>
+<path d="M14 340 Q31 334 48 340 T82 340 T116 340 T150 340 T184 340 T218 340 T252 340 T286 340" fill="none" stroke="#17202B" stroke-width="2" stroke-opacity="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="none" stroke="#17202B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M48 276 L150 314 L252 276 V287 L150 325 L48 287 Z" fill="#9F442A"/>
+<path d="M150 314 V325"/>
+<path d="M150 238 L252 276 L150 314 L48 276 Z" fill="#F5F6F6"/>
+<path d="M72.5 276 L150 304.9 M72.5 276 L150 247.1 M91.9 268.8 L169.4 297.7 M91.9 283.2 L169.4 254.3 M111.2 261.6 L188.8 290.4 M111.2 290.4 L188.8 261.6 M130.6 254.3 L208.1 283.2 M130.6 297.7 L208.1 268.8 M150 247.1 L227.5 276 M150 304.9 L227.5 276" stroke-width="1.5" stroke-opacity="0.5"/>
+<ellipse cx="91.9" cy="268.8" rx="9" ry="5.5" fill="#17202B"/>
+<ellipse cx="111.2" cy="290.4" rx="9" ry="5.5" fill="#F5F6F6"/>
+<ellipse cx="188.8" cy="290.4" rx="9" ry="5.5" fill="#17202B"/>
+<ellipse cx="208.1" cy="268.8" rx="9" ry="5.5" fill="#F5F6F6"/>
+<ellipse cx="169.4" cy="254.3" rx="9" ry="5.5" fill="#17202B"/>
+<path d="M126 284 C100 262 86 222 90 190 C92 174 88 162 82 148 C104 158 118 176 122 196 C120 150 134 104 150 58 C164 102 180 140 178 188 C184 166 198 146 220 132 C226 166 222 214 206 246 C196 264 186 276 176 284 Q150 292 126 284 Z" fill="#d9542a"/>
+<path d="M134 282 C120 264 116 236 128 210 C132 230 138 236 142 240 C140 210 144 176 150 150 C158 178 162 210 160 238 C166 230 170 222 174 212 C182 236 178 264 166 282 Q150 288 134 282 Z" fill="#9F442A"/>
+<path d="M142 282 C136 268 140 254 146 246 C148 256 152 258 156 260 C158 268 158 276 156 282 Q150 285 142 282 Z" fill="#F5F6F6"/>
+<path d="M150 150 C148 120 149 92 150 70 M96 176 C98 168 96 160 92 154 M204 176 C206 164 210 152 214 142" stroke-opacity="0.5"/>
+<path d="M178 32 L184.5 42 L178 52 L171.5 42 Z" fill="#F0CB3C"/>
+</g>
+</svg>

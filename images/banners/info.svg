@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-label="비명 이후의 고요한 들판, 먼 폐허 위 하늘의 가는 균열과 능선 위 작은 방랑자">
+<rect width="480" height="300" fill="#F5F6F6"/>
+<g fill="none" stroke="#17202B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M318.6 49.4 L326.6 40.4 L329.6 29.4" stroke-width="1.5" stroke-opacity="0.7"/>
+<path d="M363.4 60.6 L359.4 69.6 L364.4 77.6" stroke-width="1.5" stroke-opacity="0.6"/>
+<polygon points="258,40 272.5,46.7 288.1,45.9 302.1,54.2 318.1,52.9 332.5,59.8 348.5,57.1 362.7,64.1 378.6,62.4 392.9,68.9 409,67.4 424,70 409.4,64.2 394,64.1 379.8,56.3 364.1,57.1 349.6,49.7 333.5,52.4 319.2,45.9 303.3,48.1 289,41.1 272.8,43.6" fill="#F0CB3C" stroke-width="1.5"/>
+<circle cx="340" cy="76" r="1.8" fill="#17202B" stroke="none" fill-opacity="0.6"/>
+<circle cx="334" cy="96" r="1.5" fill="#17202B" stroke="none" fill-opacity="0.4"/>
+<circle cx="344" cy="116" r="1.4" fill="#17202B" stroke="none" fill-opacity="0.3"/>
+<circle cx="336" cy="136" r="1.2" fill="#17202B" stroke="none" fill-opacity="0.2"/>
+<path d="M0 172 C26 160 52 148 84 152 C112 140 150 144 176 160 C196 154 214 158 232 168" stroke-opacity="0.2"/>
+<path d="M0 186 C50 175 100 177 150 184 C200 170 250 166 300 175 C350 166 420 168 480 178 V300 H0 Z" fill="#E6EAEC" stroke="none"/>
+<path d="M0 186 C50 175 100 177 150 184 C200 170 250 166 300 175 C350 166 420 168 480 178" stroke-opacity="0.3"/>
+<path d="M256 206 V182 L262 178 L266 184 L270 176 V206" fill="#E6EAEC" stroke-opacity="0.45"/>
+<path d="M276 206 V170 L283 166 L287 172 L290 164 L294 168 V206" fill="#E6EAEC" stroke-opacity="0.45"/>
+<path d="M300 206 V184 H318 V206" fill="#E6EAEC" stroke-opacity="0.45"/>
+<path d="M302 184 Q309 176 316 184" stroke-opacity="0.45"/>
+<path d="M324 206 V156 L331 150 L334 158 L338 146 L342 154 V206" fill="#E6EAEC" stroke-opacity="0.45"/>
+<path d="M348 206 V176 L356 180 L362 172 V206" fill="#E6EAEC" stroke-opacity="0.45"/>
+<path d="M368 206 V186 L374 182 L380 188 L386 180 V206" fill="#E6EAEC" stroke-opacity="0.45"/>
+<path d="M282 182 h6" stroke-opacity="0.3"/>
+<path d="M282 192 h6" stroke-opacity="0.3"/>
+<path d="M330 168 h6" stroke-opacity="0.3"/>
+<path d="M330 180 h6" stroke-opacity="0.3"/>
+<path d="M330 192 h6" stroke-opacity="0.3"/>
+<path d="M0 214 C70 200 130 202 190 210 C250 196 330 193 400 203 C430 200 460 200 480 204 V300 H0 Z" fill="#F5F6F6" stroke="none"/>
+<path d="M0 214 C70 200 130 202 190 210 C250 196 330 193 400 203 C430 200 460 200 480 204" stroke-opacity="0.55"/>
+<path d="M0 246 C30 234 66 223 100 223 C140 223 180 240 240 256 C300 272 400 275 480 268 V300 H0 Z" fill="#E6EAEC" stroke="none"/>
+<path d="M0 246 C30 234 66 223 100 223 C140 223 180 240 240 256 C300 272 400 275 480 268"/>
+<path d="M152 232 v-6 M149 232 l-2 -4 M155 232 l2 -4" stroke-opacity="0.4"/>
+<path d="M204 247 v-6 M201 247 l-2 -4 M207 247 l2 -4" stroke-opacity="0.4"/>
+<path d="M300 268 v-6 M297 268 l-2 -4 M303 268 l2 -4" stroke-opacity="0.4"/>
+<path d="M380 273 v-6 M377 273 l-2 -4 M383 273 l2 -4" stroke-opacity="0.4"/>
+<circle cx="100" cy="200" r="3.8" fill="#17202B" stroke="none"/>
+<path d="M97.2 204.5 L102.8 204.5 L104.6 222 L94 222 C91.5 218 94 211 97.2 204.5 Z" fill="#17202B" stroke-width="1.5"/>
+<path d="M108 195 L109 222.5" stroke-width="1.6"/>
+</g>
+</svg>

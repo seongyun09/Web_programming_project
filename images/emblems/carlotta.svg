@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="얼음 파편이 뻗어 나가는 다면 보석과 그 아래 교차한 두 자루의 장식 권총">
+<rect width="300" height="400" fill="#CFE2EE"/>
+<rect x="14" y="14" width="272" height="372" rx="2" fill="none" stroke="#17202B" stroke-width="1.5" stroke-opacity="0.35"/>
+<g fill="none" stroke="#17202B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14 340 Q31 334 48 340 T82 340 T116 340 T150 340 T184 340 T218 340 T252 340 T286 340" stroke-width="2" stroke-opacity="0.45"/>
+<path d="M150 89 L158 82 L150 56 L142 82 Z" fill="#F5F6F6"/>
+<path d="M114 101.8 L112.8 92.3 L85.7 78 L104.5 102.3 Z" fill="#F5F6F6"/>
+<path d="M186 101.8 L195.5 102.3 L214.3 78 L187.2 92.3 Z" fill="#F5F6F6"/>
+<path d="M95 130.1 L88.2 123.8 L56.1 128.7 L87.8 135.8 Z" fill="#F5F6F6"/>
+<path d="M205 130.1 L212.2 135.8 L243.9 128.7 L211.8 123.8 Z" fill="#F5F6F6"/>
+<g transform="translate(150 204) rotate(-30) scale(1.15) translate(8 0)">
+<path d="M-60 -9 Q-62 -22 -73 -22 Q-69 -16 -66 -9 Z" fill="#2C709E" stroke-width="2"/>
+<path d="M-64 -6 C-74 4 -82 14 -88 24 Q-91 32 -84 35 L-73 39 C-68 29 -58 20 -46 10 Z" fill="#3592cf"/>
+<path d="M-90 26 Q-100 38 -91 46 Q-78 52 -71 40 Q-81 36 -90 26 Z" fill="#2C709E" stroke-width="2"/>
+<path d="M-76 14 Q-74 24 -79 32" stroke="#F5F6F6" stroke-width="1.5" stroke-opacity="0.8"/>
+<path d="M-57 11 Q-58 26 -48 26 Q-40 26 -42 11" stroke-width="2.5"/>
+<path d="M-51 11 L-49 19" stroke-width="2.5"/>
+<path d="M-52 -7 L44 -5.5 L44 5.5 L-52 7 Z" fill="#3592cf"/>
+<path d="M42 -8.5 L51 -8.5 L51 8.5 L42 8.5 Z" fill="#2C709E" stroke-width="2"/>
+<path d="M8 -6 V6 M15 -5.8 V5.8" stroke-width="1.5" stroke-opacity="0.6"/>
+<path d="M-67 -9 L-46 -9 Q-42 -9 -42 -5 L-42 8 Q-42 12 -46 12 L-67 12 Q-70 12 -70 8 L-70 -5 Q-70 -9 -67 -9 Z" fill="#2C709E"/>
+</g>
+<g transform="translate(150 204) scale(-1 1) rotate(-30) scale(1.15) translate(8 0)">
+<path d="M-60 -9 Q-62 -22 -73 -22 Q-69 -16 -66 -9 Z" fill="#2C709E" stroke-width="2"/>
+<path d="M-64 -6 C-74 4 -82 14 -88 24 Q-91 32 -84 35 L-73 39 C-68 29 -58 20 -46 10 Z" fill="#3592cf"/>
+<path d="M-90 26 Q-100 38 -91 46 Q-78 52 -71 40 Q-81 36 -90 26 Z" fill="#2C709E" stroke-width="2"/>
+<path d="M-76 14 Q-74 24 -79 32" stroke="#F5F6F6" stroke-width="1.5" stroke-opacity="0.8"/>
+<path d="M-57 11 Q-58 26 -48 26 Q-40 26 -42 11" stroke-width="2.5"/>
+<path d="M-51 11 L-49 19" stroke-width="2.5"/>
+<path d="M-52 -7 L44 -5.5 L44 5.5 L-52 7 Z" fill="#3592cf"/>
+<path d="M42 -8.5 L51 -8.5 L51 8.5 L42 8.5 Z" fill="#2C709E" stroke-width="2"/>
+<path d="M8 -6 V6 M15 -5.8 V5.8" stroke-width="1.5" stroke-opacity="0.6"/>
+<path d="M-67 -9 L-46 -9 Q-42 -9 -42 -5 L-42 8 Q-42 12 -46 12 L-67 12 Q-70 12 -70 8 L-70 -5 Q-70 -9 -67 -9 Z" fill="#2C709E"/>
+</g>
+<path d="M124 98 L176 98 L204 124 L150 184 L96 124 Z" fill="#3592cf"/>
+<path d="M124 98 L136 124 L150 98 L164 124 L176 98 L204 124 L96 124 Z" fill="#F5F6F6" stroke-width="2"/>
+<path d="M124 98 L110 124 M176 98 L190 124" stroke-width="2"/>
+<path d="M136 124 L150 98 L164 124 Z" fill="#3592cf" stroke-width="2"/>
+<path d="M136 124 L150 184 L164 124 M110 124 L150 184 L190 124" stroke-width="2"/>
+<path d="M150 124 L164 124 L150 184 L136 124 Z" fill="#2C709E" stroke-width="2"/>
+<path d="M124 98 L176 98 L204 124 L150 184 L96 124 Z"/>
+<path d="M180 113 L183 121 L191 124 L183 127 L180 135 L177 127 L169 124 L177 121 Z" fill="#F0CB3C" stroke-width="1.5"/>
+</g>
+</svg>

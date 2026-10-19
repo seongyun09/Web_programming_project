@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="휘어 올라간 처마 위에서 여의주를 감싸 도는 용">
+<rect width="300" height="400" fill="#EFE9C5"/>
+<rect x="14" y="14" width="272" height="372" rx="2" fill="none" stroke="#17202B" stroke-width="1.5" stroke-opacity="0.35"/>
+<path d="M14 340 Q31 334 48 340 T82 340 T116 340 T150 340 T184 340 T218 340 T252 340 T286 340" fill="none" stroke="#17202B" stroke-width="2" stroke-opacity="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="none" stroke="#17202B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M106 286 L194 286 C212 298 236 304 264 288 C256 306 232 318 206 316 L94 316 C68 318 44 306 36 288 C64 304 88 298 106 286 Z" fill="#9F880D"/>
+<path d="M120 294 V308 M140 294 V308 M160 294 V308 M180 294 V308" stroke="#F5F6F6" stroke-opacity="0.6"/>
+<path d="M230 258 C244 250 254 238 262 222 C261 238 259 250 253 260 C261 260 268 263 274 269 C258 275 244 275 232 270 Z" fill="#d9b400"/>
+<path d="M75.2 215.2 L57.1 221 L71.7 201.7 M73.9 157.9 L55.9 151.7 L79.2 144.9 M110.9 113.5 L102.1 96.6 L123.6 107.7 M166.2 100.9 L167 81.9 L180.1 102.3" fill="#9F880D"/>
+<circle cx="130" cy="188" r="21" fill="#F0CB3C"/>
+<path d="M236 266 C206 276 150 272 114 252 C76 230 68 172 92 140 C116 108 172 100 206 120 C228 132 240 156 232 180 C228 192 220 198 208 200" stroke-width="27"/>
+<path d="M236 266 C206 276 150 272 114 252 C76 230 68 172 92 140 C116 108 172 100 206 120 C228 132 240 156 232 180 C228 192 220 198 208 200" stroke="#d9b400" stroke-width="22"/>
+<path d="M226 268 C206 271 150 268 116 248 C80 226 74 174 96 144 C118 114 170 106 202 124 C222 136 232 156 226 176" stroke="#9F880D" stroke-width="3" stroke-dasharray="3 12"/>
+<g transform="translate(210 200) rotate(172) scale(1.1 -1.1)" stroke-width="2.3">
+<path d="M6 -14 C5 -24 2 -32 -4 -40 M16 -13 C17 -22 15 -29 10 -36" stroke-width="3.2"/>
+<path d="M-8 -13 C2 -20 12 -21 18 -17 C22 -14 26 -12 30 -11 L44 -10 C50 -10 55 -5 53 0 C52 5 48 7 44 7 L30 10 C20 15 6 16 -8 13 Z" fill="#d9b400"/>
+<path d="M30 3 C36 4 42 3 47 1" stroke-opacity="0.6"/>
+<circle cx="21" cy="-7" r="2.6" fill="#17202B" stroke="none"/>
+<path d="M44 7 C50 18 44 30 30 34 C20 37 18 44 24 48 M34 10 C36 18 31 23 24 25"/>
+</g>
+</g>
+</svg>
