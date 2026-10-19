@@ -4,87 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>커뮤니티 | 명조 아카이브</title>
+  <meta name="description" content="명조 팬 커뮤니티 게시판">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="theme-community">
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
   <header class="site-header">
-    <h1 class="logo">
-      <a href="index.html">
-        <span class="logo-mark" aria-hidden="true">鳴</span>
-        <span class="logo-text">명조 아카이브<small>WUTHERING WAVES ARCHIVE</small></span>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-seal" aria-hidden="true">鳴</span>
+        <span class="brand-name">명조 아카이브</span>
       </a>
-    </h1>
-    <nav class="gnb">
-      <ul>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">세계관 / 스토리</a></li>
+        <li><a href="info.html">세계관/스토리</a></li>
         <li><a href="char.html">공명자</a></li>
         <li><a href="guide.html">가이드</a></li>
-        <li><a href="community.html" class="active">커뮤니티</a></li>
-        <li><a href="play.html" class="nav-fav"><span aria-hidden="true">♥</span> 최애찾기</a></li>
-      </ul>
-    </nav>
+        <li><a href="community.html" aria-current="page">커뮤니티</a></li>
+        <li><a class="nav-fav" href="play.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5s-7.5-4.6-9.3-9.6C1.4 7.4 3.6 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.4 0 5.6 3.4 4.3 6.9-1.8 5-9.3 9.6-9.3 9.6z"/></svg><span>최애찾기</span></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="main" class="wrap">
     <div class="page-head">
-      <h2>커뮤니티</h2>
-      <p>유저와 함께 만들어 나가는 공간입니다. 플레이 리뷰, 밈, 소식을 자유롭게 남겨 주세요.</p>
+      <h1>커뮤니티</h1>
+      <p class="lede">플레이 후기, 밈, 소식, 궁금한 점을 자유롭게 남겨 주세요.</p>
+      <div class="page-wave" aria-hidden="true"></div>
     </div>
 
-    <section>
-      <h2 class="section-title">글쓰기</h2>
-      <form class="post-form" id="post-form">
-        <label>
-          분류
-          <select name="category">
-            <option value="리뷰">리뷰</option>
-            <option value="밈">밈</option>
-            <option value="소식">소식</option>
-            <option value="질문">질문</option>
-          </select>
-        </label>
-        <label>
-          닉네임
-          <input type="text" name="author" maxlength="20" placeholder="방랑자" required>
-        </label>
-        <label>
-          제목
+    <section class="block" aria-labelledby="write-title">
+      <h2 id="write-title" class="section-title">글쓰기</h2>
+      <form class="form" id="post-form">
+        <div class="form-row">
+          <label>분류
+            <select name="category">
+              <option value="리뷰">리뷰</option>
+              <option value="밈">밈</option>
+              <option value="소식">소식</option>
+              <option value="질문">질문</option>
+            </select>
+          </label>
+          <label>닉네임
+            <input type="text" name="author" maxlength="20" placeholder="방랑자" autocomplete="nickname" required>
+          </label>
+        </div>
+        <label>제목
           <input type="text" name="title" maxlength="60" required>
         </label>
-        <label>
-          내용
+        <label>내용
           <textarea name="content" maxlength="1000" required></textarea>
         </label>
-        <button type="submit" class="btn">등록</button>
+        <div class="form-actions">
+          <button type="submit" class="btn">글 올리기</button>
+          <p class="form-hint">올린 글은 지금 쓰는 브라우저에만 저장돼요. 다른 사람에게는 보이지 않아요.</p>
+        </div>
       </form>
-      <p class="muted" style="margin-top: 8px; font-size: 0.85rem;">
-        작성한 글은 지금 사용 중인 브라우저에만 저장됩니다.
-      </p>
     </section>
 
-    <section>
-      <h2 class="section-title">게시글</h2>
-      <div class="filter-bar" id="filter-bar">
-        <button type="button" data-filter="전체" class="active">전체</button>
-        <button type="button" data-filter="리뷰">리뷰</button>
-        <button type="button" data-filter="밈">밈</button>
-        <button type="button" data-filter="소식">소식</button>
-        <button type="button" data-filter="질문">질문</button>
+    <section class="block" aria-labelledby="board-title">
+      <h2 id="board-title" class="section-title">게시글</h2>
+      <div class="filter" id="filter-bar" role="group" aria-label="분류로 거르기">
+        <button type="button" class="chip" data-filter="전체" aria-pressed="true">전체</button>
+        <button type="button" class="chip" data-filter="리뷰" data-cat="리뷰" aria-pressed="false">리뷰</button>
+        <button type="button" class="chip" data-filter="밈" data-cat="밈" aria-pressed="false">밈</button>
+        <button type="button" class="chip" data-filter="소식" data-cat="소식" aria-pressed="false">소식</button>
+        <button type="button" class="chip" data-filter="질문" data-cat="질문" aria-pressed="false">질문</button>
       </div>
-      <div class="post-list" id="post-list"></div>
+      <p class="sr-only" id="post-status" aria-live="polite"></p>
+      <ul class="post-list" id="post-list"></ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <nav class="footer-links">
-      <a href="https://github.com/seongyun09/Web_programming_project" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:example@example.com">이메일</a>
-      <a href="https://wutheringwaves.kurogames.com/" target="_blank" rel="noopener">명조 공식 사이트</a>
-    </nav>
-    <p class="copyright">
-      &copy; 2026 명조 아카이브 (팬메이드 비공식 페이지). 명조: 워더링 웨이브의 저작권은 쿠로게임즈에 있습니다.
-    </p>
+    <div class="wrap">
+      <p class="footer-brand">명조 아카이브</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/seongyun09/Web_programming_project" target="_blank" rel="noopener">GitHub<span class="sr-only"> (새 창)</span></a></li>
+        <li><a href="mailto:example@example.com">이메일</a></li>
+        <li><a href="https://wutheringwaves.kurogames.com/" target="_blank" rel="noopener">명조 공식 사이트<span class="sr-only"> (새 창)</span></a></li>
+      </ul>
+      <p class="footer-note">팬이 만든 비공식 사이트예요. 명조: 워더링 웨이브와 관련 이미지, 명칭의 저작권은 쿠로게임즈에 있어요.</p>
+    </div>
   </footer>
 
   <script src="community.js"></script>

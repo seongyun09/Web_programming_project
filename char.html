@@ -4,95 +4,221 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>공명자 | 명조 아카이브</title>
+  <meta name="description" content="명조 공명자의 속성, 무기, 역할, 운용법 정리">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="theme-char">
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
   <header class="site-header">
-    <h1 class="logo">
-      <a href="index.html">
-        <span class="logo-mark" aria-hidden="true">鳴</span>
-        <span class="logo-text">명조 아카이브<small>WUTHERING WAVES ARCHIVE</small></span>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-seal" aria-hidden="true">鳴</span>
+        <span class="brand-name">명조 아카이브</span>
       </a>
-    </h1>
-    <nav class="gnb">
-      <ul>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">세계관 / 스토리</a></li>
-        <li><a href="char.html" class="active">공명자</a></li>
+        <li><a href="info.html">세계관/스토리</a></li>
+        <li><a href="char.html" aria-current="page">공명자</a></li>
         <li><a href="guide.html">가이드</a></li>
         <li><a href="community.html">커뮤니티</a></li>
-        <li><a href="play.html" class="nav-fav"><span aria-hidden="true">♥</span> 최애찾기</a></li>
-      </ul>
-    </nav>
+        <li><a class="nav-fav" href="play.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5s-7.5-4.6-9.3-9.6C1.4 7.4 3.6 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.4 0 5.6 3.4 4.3 6.9-1.8 5-9.3 9.6-9.3 9.6z"/></svg><span>최애찾기</span></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="main" class="wrap">
     <div class="page-head">
-      <h2>공명자</h2>
-      <p>공명자별 기초 설명과 운용법을 정리합니다.</p>
+      <h1>공명자</h1>
+      <p class="lede">솔라리스-3를 함께 누비는 공명자들을 속성별로 모았어요. 각자 어떤 사람인지, 전투에서는 어떻게 쓰는지 정리했어요.</p>
+      <div class="page-wave" aria-hidden="true"></div>
     </div>
 
-    <section>
-      <h2 class="section-title">공명자 목록</h2>
-      <div class="char-grid">
-        <article class="char-card">
-          <div class="img-placeholder">일러스트</div>
-          <div class="char-body">
+    <section class="block roster-area" aria-labelledby="roster-title">
+      <h2 id="roster-title" class="section-title">공명자 목록</h2>
+      <fieldset class="filter">
+        <legend class="sr-only">속성으로 거르기</legend>
+        <input type="radio" name="el" id="f-all" class="sr-only" checked>
+        <label class="chip" for="f-all">전체</label>
+        <input type="radio" name="el" id="f-spectro" class="sr-only">
+        <label class="chip" for="f-spectro" data-el="spectro">회절</label>
+        <input type="radio" name="el" id="f-fusion" class="sr-only">
+        <label class="chip" for="f-fusion" data-el="fusion">용융</label>
+        <input type="radio" name="el" id="f-glacio" class="sr-only">
+        <label class="chip" for="f-glacio" data-el="glacio">응결</label>
+        <input type="radio" name="el" id="f-aero" class="sr-only">
+        <label class="chip" for="f-aero" data-el="aero">기류</label>
+        <input type="radio" name="el" id="f-electro" class="sr-only">
+        <label class="chip" for="f-electro" data-el="electro">전도</label>
+        <input type="radio" name="el" id="f-havoc" class="sr-only">
+        <label class="chip" for="f-havoc" data-el="havoc">인멸</label>
+      </fieldset>
+      <ul class="roster">
+        <li class="res" id="rover" data-el="spectro">
+          <span class="seal" aria-hidden="true">방</span>
+          <div>
             <h3>방랑자</h3>
-            <div class="tags">
-              <span class="tag">속성</span>
-              <span class="tag">무기</span>
-              <span class="tag">역할</span>
-            </div>
-            <h4>기초 설명</h4>
-            <p>캐릭터 소개를 작성할 자리입니다.</p>
-            <h4>운용법</h4>
-            <p>스킬 사용 순서, 추천 에코, 파티 조합 등을 작성할 자리입니다.</p>
+            <p class="res-meta"><span class="el-tag">회절</span><span>직검</span><span>메인 딜러</span></p>
+            <p class="res-desc">기억을 잃은 채 깨어난 이야기의 주인공이에요. 여정을 이어 가며 여러 속성의 힘을 각성해요.</p>
+            <p class="res-tip"><strong>운용</strong> 스토리로 얻는 공명자라서 초반 파티의 중심을 맡기 좋아요.</p>
           </div>
-        </article>
-        <article class="char-card">
-          <div class="img-placeholder">일러스트</div>
-          <div class="char-body">
-            <h3>공명자 2</h3>
-            <div class="tags">
-              <span class="tag">속성</span>
-              <span class="tag">무기</span>
-              <span class="tag">역할</span>
-            </div>
-            <h4>기초 설명</h4>
-            <p>캐릭터 소개를 작성할 자리입니다.</p>
-            <h4>운용법</h4>
-            <p>스킬 사용 순서, 추천 에코, 파티 조합 등을 작성할 자리입니다.</p>
+        </li>
+        <li class="res" id="jinhsi" data-el="spectro">
+          <span class="seal" aria-hidden="true">금</span>
+          <div>
+            <h3>금희</h3>
+            <p class="res-meta"><span class="el-tag">회절</span><span>대검</span><span>메인 딜러</span></p>
+            <p class="res-desc">금주를 이끄는 젊은 수장이에요. 온화하지만 도시를 지키려는 의지는 누구보다 강해요.</p>
+            <p class="res-tip"><strong>운용</strong> 힘을 차곡차곡 쌓았다가 큰 한 방으로 터뜨리는 구조라, 동료와의 교체 타이밍이 중요해요.</p>
           </div>
-        </article>
-        <article class="char-card">
-          <div class="img-placeholder">일러스트</div>
-          <div class="char-body">
-            <h3>공명자 3</h3>
-            <div class="tags">
-              <span class="tag">속성</span>
-              <span class="tag">무기</span>
-              <span class="tag">역할</span>
-            </div>
-            <h4>기초 설명</h4>
-            <p>캐릭터 소개를 작성할 자리입니다.</p>
-            <h4>운용법</h4>
-            <p>스킬 사용 순서, 추천 에코, 파티 조합 등을 작성할 자리입니다.</p>
+        </li>
+        <li class="res" id="changli" data-el="fusion">
+          <span class="seal" aria-hidden="true">장</span>
+          <div>
+            <h3>장리</h3>
+            <p class="res-meta"><span class="el-tag">용융</span><span>직검</span><span>서브 딜러</span></p>
+            <p class="res-desc">금주의 수장을 보좌하는 책사예요. 바둑을 두듯 전장의 흐름을 설계해요.</p>
+            <p class="res-tip"><strong>운용</strong> 용융 메인 딜러의 피해를 끌어올려 주는 역할로 자주 쓰여요.</p>
           </div>
-        </article>
-      </div>
+        </li>
+        <li class="res" id="jiyan" data-el="aero">
+          <span class="seal" aria-hidden="true">기</span>
+          <div>
+            <h3>기염</h3>
+            <p class="res-meta"><span class="el-tag">기류</span><span>대검</span><span>메인 딜러</span></p>
+            <p class="res-desc">금주를 지키는 군을 이끄는 장군이에요. 창을 휘두르는 호쾌한 연속 공격이 특징이에요.</p>
+            <p class="res-tip"><strong>운용</strong> 공명 해방 상태에서 몰아치는 강공격이 핵심이라, 에너지를 모아 두고 진입해요.</p>
+          </div>
+        </li>
+        <li class="res" id="yinlin" data-el="electro">
+          <span class="seal" aria-hidden="true">음</span>
+          <div>
+            <h3>음림</h3>
+            <p class="res-meta"><span class="el-tag">전도</span><span>증폭기</span><span>서브 딜러</span></p>
+            <p class="res-desc">꼭두각시 인형을 조종해 싸우는 정보원이에요. 속내를 쉽게 드러내지 않아요.</p>
+            <p class="res-tip"><strong>운용</strong> 적에게 표식을 남겨 추가 피해를 주고, 전도 딜러와 특히 잘 맞아요.</p>
+          </div>
+        </li>
+        <li class="res" id="calcharo" data-el="electro">
+          <span class="seal" aria-hidden="true">카</span>
+          <div>
+            <h3>카카루</h3>
+            <p class="res-meta"><span class="el-tag">전도</span><span>대검</span><span>메인 딜러</span></p>
+            <p class="res-desc">악명 높은 용병단을 이끄는 우두머리예요. 거칠어 보여도 맡은 일은 확실히 끝내요.</p>
+            <p class="res-tip"><strong>운용</strong> 해방 뒤에 이어지는 마무리 공격으로 폭발적인 피해를 내요.</p>
+          </div>
+        </li>
+        <li class="res" id="encore" data-el="fusion">
+          <span class="seal" aria-hidden="true">앙</span>
+          <div>
+            <h3>앙코</h3>
+            <p class="res-meta"><span class="el-tag">용융</span><span>증폭기</span><span>메인 딜러</span></p>
+            <p class="res-desc">양 인형 친구들과 함께 다니는 밝은 소녀예요. 귀여운 모습과 달리 화력은 불꽃 같아요.</p>
+            <p class="res-tip"><strong>운용</strong> 해방 중에는 일반 공격이 강해지니 그 시간을 최대한 활용해요.</p>
+          </div>
+        </li>
+        <li class="res" id="verina" data-el="spectro">
+          <span class="seal" aria-hidden="true">벨</span>
+          <div>
+            <h3>벨리나</h3>
+            <p class="res-meta"><span class="el-tag">회절</span><span>증폭기</span><span>힐러</span></p>
+            <p class="res-desc">식물을 사랑하는 상냥한 식물학자예요. 꽃과 덩굴의 힘으로 동료를 치유해요.</p>
+            <p class="res-tip"><strong>운용</strong> 회복과 파티 전체 피해 증가를 함께 챙길 수 있어서 어느 파티에나 잘 어울려요.</p>
+          </div>
+        </li>
+        <li class="res" id="lingyang" data-el="glacio">
+          <span class="seal" aria-hidden="true">능</span>
+          <div>
+            <h3>능양</h3>
+            <p class="res-meta"><span class="el-tag">응결</span><span>권갑</span><span>메인 딜러</span></p>
+            <p class="res-desc">사자춤을 추는 활기찬 소년이에요. 공중을 누비는 발차기 공격이 특징이에요.</p>
+            <p class="res-tip"><strong>운용</strong> 공중에 오래 머물수록 피해가 커져요.</p>
+          </div>
+        </li>
+        <li class="res" id="jianxin" data-el="aero">
+          <span class="seal" aria-hidden="true">감</span>
+          <div>
+            <h3>감심</h3>
+            <p class="res-meta"><span class="el-tag">기류</span><span>권갑</span><span>서포터</span></p>
+            <p class="res-desc">도를 닦는 무술가예요. 기의 흐름을 다루어 보호막을 만들고 적을 끌어모아요.</p>
+            <p class="res-tip"><strong>운용</strong> 보호막으로 파티를 지키고, 적을 한데 모아 광역 공격을 도와요.</p>
+          </div>
+        </li>
+        <li class="res" id="camellya" data-el="havoc">
+          <span class="seal" aria-hidden="true">카</span>
+          <div>
+            <h3>카멜리아</h3>
+            <p class="res-meta"><span class="el-tag">인멸</span><span>직검</span><span>메인 딜러</span></p>
+            <p class="res-desc">꽃처럼 아름답지만 위험한 분위기를 풍기는 수수께끼의 인물이에요.</p>
+            <p class="res-tip"><strong>운용</strong> 필드에 오래 머물며 빠른 연속 공격을 퍼붓는 주력 딜러예요.</p>
+          </div>
+        </li>
+        <li class="res" id="carlotta" data-el="glacio">
+          <span class="seal" aria-hidden="true">카</span>
+          <div>
+            <h3>카를로타</h3>
+            <p class="res-meta"><span class="el-tag">응결</span><span>권총</span><span>메인 딜러</span></p>
+            <p class="res-desc">리나시타 명문가 출신의 아가씨예요. 우아한 몸짓으로 쌍권총을 다뤄요.</p>
+            <p class="res-tip"><strong>운용</strong> 공명 스킬 피해 비중이 높아서, 이를 강화해 주는 서포터와 잘 맞아요.</p>
+          </div>
+        </li>
+        <li class="res" id="shorekeeper" data-el="spectro">
+          <span class="seal" aria-hidden="true">파</span>
+          <div>
+            <h3>파수인</h3>
+            <p class="res-meta"><span class="el-tag">회절</span><span>증폭기</span><span>힐러</span></p>
+            <p class="res-desc">흑해안을 오랫동안 지켜 온 존재예요. 방랑자와 깊은 인연이 있어요.</p>
+            <p class="res-tip"><strong>운용</strong> 회복과 치명타 관련 강화를 함께 주는 든든한 서포터예요.</p>
+          </div>
+        </li>
+        <li class="res" id="xiangliyao" data-el="electro">
+          <span class="seal" aria-hidden="true">상</span>
+          <div>
+            <h3>상리요</h3>
+            <p class="res-meta"><span class="el-tag">전도</span><span>권갑</span><span>메인 딜러</span></p>
+            <p class="res-desc">연구에 몰두하는 학자예요. 기계 팔을 활용한 정밀한 공격이 특기예요.</p>
+            <p class="res-tip"><strong>운용</strong> 공명 해방 상태에서 강력한 연계를 넣기 때문에 해방 타이밍이 중요해요.</p>
+          </div>
+        </li>
+        <li class="res" id="zhezhi" data-el="glacio">
+          <span class="seal" aria-hidden="true">절</span>
+          <div>
+            <h3>절지</h3>
+            <p class="res-meta"><span class="el-tag">응결</span><span>증폭기</span><span>서브 딜러</span></p>
+            <p class="res-desc">붓으로 그린 그림을 현실로 불러내는 화가예요. 조용하고 수줍음이 많아요.</p>
+            <p class="res-tip"><strong>운용</strong> 그림 속 생물이 추가 공격을 넣으며 메인 딜러를 도와요.</p>
+          </div>
+        </li>
+        <li class="res" id="phoebe" data-el="spectro">
+          <span class="seal" aria-hidden="true">페</span>
+          <div>
+            <h3>페비</h3>
+            <p class="res-meta"><span class="el-tag">회절</span><span>증폭기</span><span>서브 딜러</span></p>
+            <p class="res-desc">리나시타의 신앙 공동체에서 자란 소녀예요. 맑은 마음으로 빛을 다뤄요.</p>
+            <p class="res-tip"><strong>운용</strong> 회절 파티에서 지속 피해를 쌓아 주는 역할로 쓰여요.</p>
+          </div>
+        </li>
+      </ul>
+      <p class="section-note">설명은 팬이 정리한 요약이에요. 정확한 성능은 게임 안의 정보를 확인해 주세요.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <nav class="footer-links">
-      <a href="https://github.com/seongyun09/Web_programming_project" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:example@example.com">이메일</a>
-      <a href="https://wutheringwaves.kurogames.com/" target="_blank" rel="noopener">명조 공식 사이트</a>
-    </nav>
-    <p class="copyright">
-      &copy; 2026 명조 아카이브 (팬메이드 비공식 페이지). 명조: 워더링 웨이브의 저작권은 쿠로게임즈에 있습니다.
-    </p>
+    <div class="wrap">
+      <p class="footer-brand">명조 아카이브</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/seongyun09/Web_programming_project" target="_blank" rel="noopener">GitHub<span class="sr-only"> (새 창)</span></a></li>
+        <li><a href="mailto:example@example.com">이메일</a></li>
+        <li><a href="https://wutheringwaves.kurogames.com/" target="_blank" rel="noopener">명조 공식 사이트<span class="sr-only"> (새 창)</span></a></li>
+      </ul>
+      <p class="footer-note">팬이 만든 비공식 사이트예요. 명조: 워더링 웨이브와 관련 이미지, 명칭의 저작권은 쿠로게임즈에 있어요.</p>
+    </div>
   </footer>
+
 </body>
 </html>

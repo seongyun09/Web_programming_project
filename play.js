@@ -1,10 +1,35 @@
-// 이상형 월드컵: 후보 목록에서 무작위로 뽑아 토너먼트를 진행한다.
-// 이미지가 준비되면 각 후보에 image 경로를 넣으면 된다.
-const candidates = Array.from({ length: 16 }, (_, i) => ({
-  name: `공명자 ${i + 1}`,
-  image: "",
-  hue: (i * 360) / 16,
-}));
+// 이상형 월드컵: 후보 중 무작위로 뽑아 토너먼트를 진행한다.
+// id는 char.html의 공명자 항목 id와 같아서, 결과 화면에서 소개로 바로 이동할 수 있다.
+const candidates = [
+  { id: "rover", name: "방랑자", el: "spectro", weapon: "직검" },
+  { id: "jinhsi", name: "금희", el: "spectro", weapon: "대검" },
+  { id: "changli", name: "장리", el: "fusion", weapon: "직검" },
+  { id: "jiyan", name: "기염", el: "aero", weapon: "대검" },
+  { id: "yinlin", name: "음림", el: "electro", weapon: "증폭기" },
+  { id: "calcharo", name: "카카루", el: "electro", weapon: "대검" },
+  { id: "encore", name: "앙코", el: "fusion", weapon: "증폭기" },
+  { id: "verina", name: "벨리나", el: "spectro", weapon: "증폭기" },
+  { id: "lingyang", name: "능양", el: "glacio", weapon: "권갑" },
+  { id: "jianxin", name: "감심", el: "aero", weapon: "권갑" },
+  { id: "camellya", name: "카멜리아", el: "havoc", weapon: "직검" },
+  { id: "carlotta", name: "카를로타", el: "glacio", weapon: "권총" },
+  { id: "shorekeeper", name: "파수인", el: "spectro", weapon: "증폭기" },
+  { id: "xiangliyao", name: "상리요", el: "electro", weapon: "권갑" },
+  { id: "zhezhi", name: "절지", el: "glacio", weapon: "증폭기" },
+  { id: "phoebe", name: "페비", el: "spectro", weapon: "증폭기" },
+];
+
+const ELEMENT_NAMES = {
+  spectro: "회절",
+  fusion: "용융",
+  glacio: "응결",
+  aero: "기류",
+  electro: "전도",
+  havoc: "인멸",
+};
+
+// 고른 쪽을 잠깐 보여 준 뒤 다음 대결로 넘어가는 시간
+const PICK_DELAY = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 260;
 
 const setup = document.getElementById("wc-setup");
 const sizeSelect = document.getElementById("wc-size");
@@ -13,10 +38,12 @@ const game = document.getElementById("wc-game");
 const roundLabel = document.getElementById("wc-round");
 const countLabel = document.getElementById("wc-count");
 const progressBar = document.getElementById("wc-progress");
-const leftBtn = document.getElementById("wc-left");
-const rightBtn = document.getElementById("wc-right");
+const picks = [document.getElementById("wc-left"), document.getElementById("wc-right")];
 const result = document.getElementById("wc-result");
+const resultTitle = document.getElementById("wc-result-title");
 const winnerLabel = document.getElementById("wc-winner");
+const winnerSeal = document.getElementById("wc-seal");
+const profileLink = document.getElementById("wc-profile");
 const restartBtn = document.getElementById("wc-restart");
 
 let current = []; // 이번 라운드 참가자
@@ -24,6 +51,7 @@ let next = []; // 다음 라운드 진출자
 let matchIndex = 0;
 let totalMatches = 0;
 let playedMatches = 0;
+let busy = false;
 
 function shuffle(array) {
   const copy = [...array];
@@ -39,15 +67,18 @@ function roundName(size) {
 }
 
 function fillPick(button, candidate) {
-  const img = button.querySelector(".wc-img");
-  if (candidate.image) {
-    img.style.background = `center / cover no-repeat url("${candidate.image}")`;
-    img.textContent = "";
-  } else {
-    img.style.background = `linear-gradient(160deg, hsl(${candidate.hue} 70% 35%), #0a0e17)`;
-    img.textContent = candidate.name.slice(-2).trim();
-  }
-  button.querySelector(".wc-name").textContent = candidate.name;
+  button.dataset.el = candidate.el;
+  button.classList.remove("is-picked", "is-dropped");
+  button.disabled = false;
+  button.querySelector(".wc-face").textContent = candidate.name[0];
+
+  const name = button.querySelector(".wc-name");
+  name.textContent = candidate.name;
+  const sub = document.createElement("small");
+  sub.textContent = `${ELEMENT_NAMES[candidate.el]} ${candidate.weapon}`;
+  name.appendChild(sub);
+
+  button.setAttribute("aria-label", `${candidate.name} 고르기`);
 }
 
 function showMatch() {
@@ -56,11 +87,25 @@ function showMatch() {
   countLabel.textContent = `${matchIndex + 1} / ${matchesInRound}`;
   progressBar.style.width = `${(playedMatches / totalMatches) * 100}%`;
 
-  fillPick(leftBtn, current[matchIndex * 2]);
-  fillPick(rightBtn, current[matchIndex * 2 + 1]);
+  fillPick(picks[0], current[matchIndex * 2]);
+  fillPick(picks[1], current[matchIndex * 2 + 1]);
 }
 
-function pick(side) {
+function showResult(winner) {
+  progressBar.style.width = "100%";
+  game.hidden = true;
+  result.hidden = false;
+
+  winnerLabel.textContent = winner.name;
+  winnerSeal.textContent = winner.name[0];
+  winnerSeal.dataset.el = winner.el;
+  profileLink.href = `char.html#${winner.id}`;
+  // 고정 헤더에 가리지 않게 먼저 스크롤한 뒤 포커스를 옮긴다.
+  result.scrollIntoView({ block: "start" });
+  resultTitle.focus({ preventScroll: true });
+}
+
+function advance(side) {
   next.push(current[matchIndex * 2 + side]);
   matchIndex++;
   playedMatches++;
@@ -71,10 +116,7 @@ function pick(side) {
   }
 
   if (next.length === 1) {
-    progressBar.style.width = "100%";
-    game.hidden = true;
-    result.hidden = false;
-    winnerLabel.textContent = next[0].name;
+    showResult(next[0]);
     return;
   }
 
@@ -82,6 +124,21 @@ function pick(side) {
   next = [];
   matchIndex = 0;
   showMatch();
+}
+
+function pick(side) {
+  if (busy) return;
+  busy = true;
+
+  picks[side].classList.add("is-picked");
+  picks[1 - side].classList.add("is-dropped");
+  picks.forEach((button) => (button.disabled = true));
+
+  setTimeout(() => {
+    busy = false;
+    advance(side);
+    if (!game.hidden) picks[side].focus();
+  }, PICK_DELAY);
 }
 
 function start() {
@@ -96,12 +153,13 @@ function start() {
   result.hidden = true;
   game.hidden = false;
   showMatch();
+  picks[0].focus();
 }
 
 startBtn.addEventListener("click", start);
-leftBtn.addEventListener("click", () => pick(0));
-rightBtn.addEventListener("click", () => pick(1));
+picks.forEach((button, side) => button.addEventListener("click", () => pick(side)));
 restartBtn.addEventListener("click", () => {
   result.hidden = true;
   setup.hidden = false;
+  startBtn.focus();
 });

@@ -4,120 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>최애찾기 | 명조 아카이브</title>
+  <meta name="description" content="명조 공명자 이상형 월드컵과 PV, OST 모음">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="theme-play">
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
   <header class="site-header">
-    <h1 class="logo">
-      <a href="index.html">
-        <span class="logo-mark" aria-hidden="true">鳴</span>
-        <span class="logo-text">명조 아카이브<small>WUTHERING WAVES ARCHIVE</small></span>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-seal" aria-hidden="true">鳴</span>
+        <span class="brand-name">명조 아카이브</span>
       </a>
-    </h1>
-    <nav class="gnb">
-      <ul>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">세계관 / 스토리</a></li>
+        <li><a href="info.html">세계관/스토리</a></li>
         <li><a href="char.html">공명자</a></li>
         <li><a href="guide.html">가이드</a></li>
         <li><a href="community.html">커뮤니티</a></li>
-        <li><a href="play.html" class="nav-fav active"><span aria-hidden="true">♥</span> 최애찾기</a></li>
-      </ul>
-    </nav>
+        <li><a class="nav-fav" href="play.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5s-7.5-4.6-9.3-9.6C1.4 7.4 3.6 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.4 0 5.6 3.4 4.3 6.9-1.8 5-9.3 9.6-9.3 9.6z"/></svg><span>최애찾기</span></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="main" class="wrap">
     <div class="page-head">
-      <h2>최애찾기</h2>
-      <p>이상형 월드컵으로 나의 최애 공명자를 찾아보세요.</p>
-      <nav class="sub-nav">
-        <a href="#worldcup">이상형 월드컵</a>
-        <a href="#media">미디어</a>
+      <h1>최애찾기</h1>
+      <p class="lede">공명자 두 명 중 더 마음에 드는 쪽을 계속 고르다 보면, 마지막에 나의 최애가 남아요.</p>
+      <div class="page-wave" aria-hidden="true"></div>
+      <nav class="toc" aria-label="이 페이지의 목차">
+        <ul>
+        <li><a href="#worldcup">이상형 월드컵</a></li>
+        <li><a href="#media">PV와 OST</a></li>
+        </ul>
       </nav>
     </div>
 
-    <section id="worldcup">
-      <h2 class="section-title">이상형 월드컵</h2>
+    <section id="worldcup" class="block" aria-labelledby="wc-title">
+      <h2 id="wc-title" class="section-title">이상형 월드컵</h2>
 
       <div class="wc-setup" id="wc-setup">
-        <label for="wc-size">토너먼트</label>
+        <label for="wc-size">몇 강부터 시작할까요?</label>
         <select id="wc-size">
           <option value="8">8강</option>
           <option value="16" selected>16강</option>
         </select>
-        <button type="button" class="btn" id="wc-start">시작하기</button>
+        <button type="button" class="btn" id="wc-start">월드컵 시작</button>
       </div>
 
       <div id="wc-game" hidden>
-        <div class="wc-status">
+        <div class="wc-status" aria-live="polite">
           <span id="wc-round">16강</span>
           <span id="wc-count">1 / 8</span>
         </div>
-        <div class="progress">
+        <div class="progress" aria-hidden="true">
           <div class="progress-bar" id="wc-progress"></div>
         </div>
         <div class="wc-arena">
           <button type="button" class="wc-pick" id="wc-left">
-            <span class="wc-img"></span>
+            <span class="wc-face"></span>
             <span class="wc-name"></span>
           </button>
-          <span class="wc-vs">VS</span>
+          <span class="wc-vs" aria-hidden="true">VS</span>
           <button type="button" class="wc-pick" id="wc-right">
-            <span class="wc-img"></span>
+            <span class="wc-face"></span>
             <span class="wc-name"></span>
           </button>
         </div>
       </div>
 
       <div class="wc-result" id="wc-result" hidden>
-        <h3>나의 최애 공명자는</h3>
-        <p class="winner" id="wc-winner"></p>
-        <button type="button" class="btn" id="wc-restart">다시 하기</button>
+        <span class="seal seal-lg" id="wc-seal" aria-hidden="true"></span>
+        <h3 id="wc-result-title" tabindex="-1">나의 최애 공명자는 <strong id="wc-winner"></strong></h3>
+        <div class="wc-actions">
+          <a class="btn" id="wc-profile" href="char.html">공명자 소개 보기</a>
+          <button type="button" class="btn btn-ghost" id="wc-restart">다시 하기</button>
+        </div>
       </div>
     </section>
 
-    <section id="media">
-      <h2 class="section-title">공식 PV</h2>
-      <div class="media-grid">
-        <article class="media-card">
-          <div class="video-frame"><span class="video-placeholder">PV</span></div>
-          <p>PV 제목</p>
-        </article>
-        <article class="media-card">
-          <div class="video-frame"><span class="video-placeholder">PV</span></div>
-          <p>PV 제목</p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">OST</h2>
-      <div class="ost-list">
-        <div class="ost-item">
-          <span class="ost-title">OST 제목 1</span>
-          <span class="muted">음원 준비 중</span>
-        </div>
-        <div class="ost-item">
-          <span class="ost-title">OST 제목 2</span>
-          <span class="muted">음원 준비 중</span>
-        </div>
-        <div class="ost-item">
-          <span class="ost-title">OST 제목 3</span>
-          <span class="muted">음원 준비 중</span>
+    <section id="media" class="block" aria-labelledby="media-title">
+      <h2 id="media-title" class="section-title">PV와 OST</h2>
+      <!-- PV를 바로 넣으려면 .media-frame 안에
+           <iframe src="https://www.youtube.com/embed/영상ID" title="PV 제목" allowfullscreen></iframe>
+           OST는 <audio controls src="assets/ost/파일.mp3"></audio> 로 넣으면 된다. -->
+      <div class="media">
+        <a class="media-frame" href="https://www.youtube.com/@WutheringWaves" target="_blank" rel="noopener">
+          <span class="play-dot" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+          <span class="sr-only">공식 유튜브 채널 (새 창)</span>
+        </a>
+        <div class="prose">
+          <p>공명자 PV와 버전 트레일러, 게임 OST는 명조 공식 유튜브 채널에 모두 올라와 있어요. 새 공명자가 나올 때마다 PV가 함께 공개되니, 최애의 PV부터 찾아보세요.</p>
+          <a class="text-link" href="https://www.youtube.com/@WutheringWaves" target="_blank" rel="noopener">공식 유튜브에서 보기<span class="sr-only"> (새 창)</span></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <nav class="footer-links">
-      <a href="https://github.com/seongyun09/Web_programming_project" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:example@example.com">이메일</a>
-      <a href="https://wutheringwaves.kurogames.com/" target="_blank" rel="noopener">명조 공식 사이트</a>
-    </nav>
-    <p class="copyright">
-      &copy; 2026 명조 아카이브 (팬메이드 비공식 페이지). 명조: 워더링 웨이브의 저작권은 쿠로게임즈에 있습니다.
-    </p>
+    <div class="wrap">
+      <p class="footer-brand">명조 아카이브</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/seongyun09/Web_programming_project" target="_blank" rel="noopener">GitHub<span class="sr-only"> (새 창)</span></a></li>
+        <li><a href="mailto:example@example.com">이메일</a></li>
+        <li><a href="https://wutheringwaves.kurogames.com/" target="_blank" rel="noopener">명조 공식 사이트<span class="sr-only"> (새 창)</span></a></li>
+      </ul>
+      <p class="footer-note">팬이 만든 비공식 사이트예요. 명조: 워더링 웨이브와 관련 이미지, 명칭의 저작권은 쿠로게임즈에 있어요.</p>
+    </div>
   </footer>
 
   <script src="play.js"></script>
